@@ -5,7 +5,8 @@ site_url: 'https://jkk-research.github.io' # Uncomment to set a canonical URL
 copyright: |
   &copy; Author
 docs_dir: docs/
-repo_url: https://github.com/jkk-research/
+
+repo_url: https://horverno.github.io/teszt/
 nav:
   - index.md
   - Tananyag:
