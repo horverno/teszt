@@ -1,17 +1,16 @@
 ---
 layout: default
-title: ROS 2 humble
-icon: material/code-block-tags
+title: ROS 2 humble telepítése
+icon: material/code-block-tags # kiegészítő tananyag
 ---
 
 
 
 # ROS 2 humble
 
-{: .note-title }
-> Egyszerű telepítés
->
-> A telepítés lépésről-lépésre is végrehajtható, de készítettünk egy [egyszerű shell script alapú telepítést](#otthoni--géptermi-telepítés) is.
+!!! tip "Egyszerű telepítés"
+
+    A telepítés lépésről-lépésre is végrehajtható, de készítettünk egy [egyszerű shell script alapú telepítést](#otthoni-geptermi-telepites) is.
 
 Ahogy abevezetőben írtuk, alapvetően négy lehetőség adott `ROS 2 Humble` telepítésére:
 

@@ -1,3 +1,7 @@
+---
+icon: material/code-block-tags # kiegészítő tananyag
+---
+
 # `ROS 2` F1/10 Wheeltec Gazebo simulation workshop
 
 The workshop is ROS 2 compatible [![Static Badge](https://img.shields.io/badge/ROS_2-Humble-34aec5)](https://docs.ros.org/en/humble/)

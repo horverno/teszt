@@ -1,21 +1,11 @@
 ---
-layout: default
-title: ROS1 Gyakorlat
-parent: Szabályozás
+title: ROS1 Gyakorlat - Szabályozás
+icon: material/code-braces-box # gyakorlati tananyag
 ---
 
  
 
-<details markdown="block">
-  <summary>
-    Tartalom
-  </summary>
-  {: .text-delta }
-1. TOC
-{:toc}
-</details>
 
----
 
 
 

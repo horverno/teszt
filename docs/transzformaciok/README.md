@@ -1,24 +1,8 @@
 ---
-layout: default
-title: Transzformációk
-has_children: true
-nav_order: 5
+title: Elmélet - Transzformációk
 permalink: /transzformaciok/
+icon: material/math-integral-box # elméleti tananyag
 ---
-
- 
-
-<details markdown="block">
-  <summary>
-    Tartalom
-  </summary>
-  {: .text-delta }
-1. TOC
-{:toc}
-</details>
-
----
-
 
 
 # Bevezetés
@@ -128,8 +112,8 @@ Forrás: [Robotic Systems, University of Illinois](http://motion.cs.illinois.edu
 
 
 
-{: .warning }
-A python notebook-ot és a mátrixszozás vizualizációt oktatási céllal linkeltük. ROS 2-ben rengeteg funkciót ad a `tf2` és kapcsolódó megoldásai, így nem kell "kézzel" transzlációt és rotációt írni. Transzformációkat például le lehet kérdezni 2 frame között anélkül is, hogy tudnánk pontosan hány frame-n kereszül kapcsolódnak. Az ROS 2 ezt kényelmesen biztosítja. [Erről bővebben itt lehet olvasni](https://docs.ros.org/en/humble/Tutorials/Intermediate/Tf2/Tf2-Main.html)
+!!! danger
+    A python notebook-ot és a mátrixszozás vizualizációt oktatási céllal linkeltük. ROS 2-ben rengeteg funkciót ad a `tf2` és kapcsolódó megoldásai, így nem kell "kézzel" transzlációt és rotációt írni. Transzformációkat például le lehet kérdezni 2 frame között anélkül is, hogy tudnánk pontosan hány frame-n kereszül kapcsolódnak. Az ROS 2 ezt kényelmesen biztosítja. [Erről bővebben itt lehet olvasni](https://docs.ros.org/en/humble/Tutorials/Intermediate/Tf2/Tf2-Main.html)
 
 # Homogén koordináták
 

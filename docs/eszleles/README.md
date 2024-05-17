@@ -1,28 +1,8 @@
 ---
-layout: default
-title: Észlelés
-nav_order: 6
-has_children: true
+title: Elmélelt - Észlelés
 permalink: /eszleles/
+icon: material/math-integral-box # elméleti tananyag
 ---
-
- 
-
-<details markdown="block">
-  <summary>
-    Tartalom
-  </summary>
-  {: .text-delta }
-1. TOC
-{:toc}
-</details>
-
----
-
-
-
-
-
 
 # Észlelés
 
@@ -51,8 +31,9 @@ A felhasznált szenzorok alapján lehet:
 - Mikrofon
 - A fenti szenzorok tetszőleges kombinációja
 
-{: .note }
-Magyar nyelven könnyű összekeverni az érzékelés (sensing) és az észlelés (perception) foglamakat. Az észlelés összetett funkció a nyers adatokból feldolgozott, értelmezett kimenet előállításával foglakozik.
+!!! danger
+
+    Magyar nyelven könnyű összekeverni az érzékelés (sensing) és az észlelés (perception) foglamakat. Az észlelés összetett funkció a nyers adatokból feldolgozott, értelmezett kimenet előállításával foglakozik.
 
 ```mermaid
 flowchart LR

@@ -4,21 +4,12 @@ title: VS code, git
 parent: Bevezetés
 # icon: material/account-credit-card-outline
 # icon: material/plus-outline
-icon: material/code-block-tags
+icon: material/code-block-tags # kiegészítő tananyag
 ---
 
  
 
-<details markdown="block">
-  <summary>
-    Tartalom
-  </summary>
-  {: .text-delta }
-1. TOC
-{:toc}
-</details>
 
----
 
 
 # VS code

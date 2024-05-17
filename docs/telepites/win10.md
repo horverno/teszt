@@ -1,7 +1,6 @@
 ---
-layout: default
 title: Windows WSL2
-parent: Telepítés
+icon: material/code-block-tags # kiegészítő tananyag
 ---
 
 # Windows WSL2

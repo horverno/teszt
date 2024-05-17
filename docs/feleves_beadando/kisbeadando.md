@@ -1,24 +1,9 @@
 ---
 layout: default
 title: Kis beadandó
-parent: Kis beadandó és nagy féléves
 permalink: /kis_beadando/
+icon: material/math-compass
 ---
-
- 
-
-<details markdown="block">
-  <summary>
-    Tartalom
-  </summary>
-  {: .text-delta }
-1. TOC
-{:toc}
-</details>
-
----
-
-
 
 # Kis beadandó
 
@@ -60,8 +45,9 @@ C++ és Python nyelven is létrehoztunk egy úgynevezett template repo-t, amely 
 - [github.com/sze-info/ros2_cpp_template](https://github.com/sze-info/ros2_cpp_template)
 - [github.com/sze-info/ros2_py_template](https://github.com/sze-info/ros2_py_template)
 
-{: .new }
-Erről [leírás itt](https://sze-info.github.io/arj/onallo/ros2git.html) olvasható.
+!!! tip
+
+    Erről [leírás itt](https://sze-info.github.io/arj/onallo/ros2git.html) olvasható.
 
 <img src="https://raw.githubusercontent.com/sze-info/ros2_cpp_template/main/img/use_this_template01.png" width="60%" />
 

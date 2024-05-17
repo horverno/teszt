@@ -1,12 +1,9 @@
 ---
-layout: default
-title: Elmélet
-has_children: true
-nav_order: 1
+title: Elmélet - Bevezetés
 permalink: /bevezetes/
 # icon: material/home
 # icon: material/function-variant
-icon: material/math-integral-box
+icon: material/math-integral-box # elméleti tananyag
 ---
 
 

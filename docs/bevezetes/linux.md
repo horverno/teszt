@@ -3,21 +3,12 @@ layout: default
 title: Linux, git
 parent: Bevezetés
 # icon: material/plus-outline
-icon: material/code-block-tags
+icon: material/code-block-tags # kiegészítő tananyag
 ---
 
  
 
-<details markdown="block">
-  <summary>
-    Tartalom
-  </summary>
-  {: .text-delta }
-1. TOC
-{:toc}
-</details>
 
----
 
 
 # Linux
@@ -297,7 +288,9 @@ source ~/.bashrc
 
 #### ROS 1 
 
-{: .warning }
+!!! tip
+
+    warning }
 A fejezetben a régi ROS 1-es könyzeteti változókról van szó, az új ROS 2-est a következő fejezet tartalmazza. 
 
 Kiírathatjuk a környezeti változókat (environment variables) `echo`-val / `printenv`-vel pl:

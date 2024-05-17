@@ -6,16 +6,7 @@ parent: Önálló feladatok
 
  
 
-<details markdown="block">
-  <summary>
-    Tartalom
-  </summary>
-  {: .text-delta }
-1. TOC
-{:toc}
-</details>
 
----
 
 
 # Rosbag gyakorlás
@@ -223,8 +214,9 @@ rostopic echo /odom
     covariance: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
 ```
 
-{: .new }
-A gyakorlat írásakor az `rqt_plot` volt talán az egyetlen megjelenítő az adatokra, manapság erre jobb alternatívának érezzük a [Foxglove Studio](https://foxglove.dev/)t. Ezt a szoftvert több helyen fogjuk használni a tananyagban.
+!!! tip
+
+    A gyakorlat írásakor az `rqt_plot` volt talán az egyetlen megjelenítő az adatokra, manapság erre jobb alternatívának érezzük a [Foxglove Studio](https://foxglove.dev/)t. Ezt a szoftvert több helyen fogjuk használni a tananyagban.
 
 
 

@@ -1,7 +1,6 @@
 ---
-layout: default
 title: Ground filter
-parent: Észlelés
+icon: material/code-block-tags # kiegészítő tananyag
 ---
 
 # Ground filter

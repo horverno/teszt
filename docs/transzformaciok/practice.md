@@ -1,7 +1,6 @@
 ---
-layout: default
-title: Gyakorlat
-parent: Transzformációk
+title: Gyakorlat - Transzformációk
+icon: material/code-braces-box # gyakorlati tananyag
 ---
 
 # Gyakorlat
@@ -25,8 +24,8 @@ git pull
 Amennyiben a `No such file or directory` üzenetetet kaptuk, klónozzuk a következő parancsokkal:
 
 
-{: .warning }
-A következő két parancs csak nem létező `arj_packages` esetén kell:
+!!! warning
+    A következő két parancs csak nem létező `arj_packages` esetén kell:
 
 
 ``` bash
@@ -274,8 +273,8 @@ Node(
     arguments=['1.0', '0.2', '1.4','0', '0', '0', '1', 'orbit2','orbit3'],
 ),     
 ```
-{: .warning }
-Nehezebb dolgunk van az Rviz2-vel, ugyanis ott egy launch fájlt kell meghívni nem egy node-ot.
+!!! warning
+    Nehezebb dolgunk van az Rviz2-vel, ugyanis ott egy launch fájlt kell meghívni nem egy node-ot.
 
 Első, __de kevésbé szép__ opció, hogy bemásoljuk az eredeti launch fájlt és azt egészítjük ki:
 

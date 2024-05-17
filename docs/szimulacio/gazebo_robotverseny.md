@@ -51,5 +51,6 @@ Képek a szimulátroból:
 ![](https://raw.githubusercontent.com/sze-info/racecar_gazebo/master/assets/images/gazebo_robot01.png)
 ![](https://raw.githubusercontent.com/sze-info/racecar_gazebo/master/assets/images/gazebo_track_empty01.png)
 
-{: .note }
-Később, ha a verseny után már nem szükséges, a `bashrc`-ből törölhető ez a sor, nyissuk meg vs code-ból: `code ~/.bashrc`, majd a fájl utolsó soraiból töröljük a korábban hozzáadottat. 
+!!! tip
+
+    Később, ha a verseny után már nem szükséges, a `bashrc`-ből törölhető ez a sor, nyissuk meg vs code-ból: `code ~/.bashrc`, majd a fájl utolsó soraiból töröljük a korábban hozzáadottat. 

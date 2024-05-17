@@ -1,23 +1,8 @@
 ---
 layout: default
-title: ROS2 Gyakorlat
-parent: Szabályozás
+title: Gyakorlat - szabályozás
+icon: material/code-braces-box # gyakorlati tananyag
 ---
-
- 
-
-<details markdown="block">
-  <summary>
-    Tartalom
-  </summary>
-  {: .text-delta }
-1. TOC
-{:toc}
-</details>
-
----
-
-
 
 
 # Gyakorlat

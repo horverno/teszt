@@ -1,21 +1,11 @@
 ---
-layout: default
-title: Gyakorlat
-parent: Tervezés
+title: Gyakorlat - Tervezés
+icon: material/code-braces-box # gyakorlati tananyag
 ---
 
  
 
-<details markdown="block">
-  <summary>
-    Tartalom
-  </summary>
-  {: .text-delta }
-1. TOC
-{:toc}
-</details>
 
----
 
 
 # `1.` feladat

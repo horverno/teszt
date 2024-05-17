@@ -1,23 +1,12 @@
 ---
-layout: default
-title: Mesterséges intelligencia
-has_children: true
-nav_order: 10
+title: Elmélet - Mesterséges intelligencia
 permalink: /mesterseges_intelligencia/
+icon: material/math-integral-box # elméleti tananyag
 ---
 
  
 
-<details markdown="block">
-  <summary>
-    Tartalom
-  </summary>
-  {: .text-delta }
-1. TOC
-{:toc}
-</details>
 
----
 
 
 # Mesterséges intelligencia

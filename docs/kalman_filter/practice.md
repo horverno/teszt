@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Gyakorlat
-parent: Kálmán filter
+title: Gyakorlat - Kálmán filter
+icon: material/code-braces-box # gyakorlati tananyag
 ---
 
 # Gyakorlat

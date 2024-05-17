@@ -2,7 +2,7 @@
 layout: default
 title: Elmélet - ROS 2 alapfogalmak
 parent: Bevezetés
-icon: material/math-integral-box
+icon: material/math-integral-box # elméleti tananyag
 # hide:
 #   - navigation
 #   - toc

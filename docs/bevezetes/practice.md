@@ -1,7 +1,7 @@
 ---
 title: Gyakorlat
 # icon: material/code-json
-icon: material/code-braces-box
+icon: material/code-braces-box # gyakorlati tananyag
 ---
 
  

@@ -1,23 +1,12 @@
 ---
-layout: default
-title: Érzékelés
-nav_order: 3
-has_children: true
+title: Elmélet - Érzékelés
 permalink: /erzekeles/
+icon: material/math-integral-box # elméleti tananyag
 ---
 
  
 
-<details markdown="block">
-  <summary>
-    Tartalom
-  </summary>
-  {: .text-delta }
-1. TOC
-{:toc}
-</details>
 
----
 
 
 # Érzékelés
@@ -28,8 +17,9 @@ Az érzékelés nyers adatok beolvasását jelenti.
 
 Érzékelés esetében fontos felhívi a figyelmet, hogy ez még nem jelent magas szintű adatfeldolgozást. Szenzorai lehetnek kamerák, mikrofonok, LIDAR-ok stb. Ahogy az ábra is mutatja a tananyagban az érzékeléssel együtt tárgyaljuk az aktuálást is.
 
-{: .note }
-Magyar nyelven könnyű összekeverni az érzékelés (sensing) és az észlelés (perception) foglamakat. Az érzékelés egyszerű driver szintű nyers adatok előállításával foglakozik.
+!!! note
+
+    Magyar nyelven könnyű összekeverni az érzékelés (sensing) és az észlelés (perception) foglamakat. Az érzékelés egyszerű driver szintű nyers adatok előállításával foglakozik.
 
 
 ## Kamera

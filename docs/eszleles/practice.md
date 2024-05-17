@@ -1,21 +1,12 @@
 ---
-layout: default
-title: Gyakorlat
+title: Gyakorlat - Észlelés
 parent: Észlelés
+icon: material/code-braces-box # gyakorlati tananyag
 ---
 
  
 
-<details markdown="block">
-  <summary>
-    Tartalom
-  </summary>
-  {: .text-delta }
-1. TOC
-{:toc}
-</details>
 
----
 
 
 # Előkészületek
@@ -107,8 +98,9 @@ cd ~/ros2_ws
 MAKEFLAGS="-j4" colcon build --packages-select arj_simple_perception --cmake-args -DCMAKE_BUILD_TYPE=Release
 ```
 
-{: .note }
-A klasszikus `colcon build --packages-select arj_simple_perception` is működik, csupán egy kicsit lassabb, ezért használjuk most a build flageket.
+!!! tip
+
+    A klasszikus `colcon build --packages-select arj_simple_perception` is működik, csupán egy kicsit lassabb, ezért használjuk most a build flageket.
 
 
 ``` r

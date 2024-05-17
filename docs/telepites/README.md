@@ -1,17 +1,14 @@
 ---
 layout: default
 title: Telepítés
-nav_order: 2
-has_children: true
 permalink: /telepites/
 ---
 
 # Telepítés
 
-{: .note-title }
-> ROS 2
->
-> ROS 1 verziókat csak történelmi okokból tárgyalunk, a jelenlegi fejlesztésekhez a ROS 2-t ajánljuk.
+!!! danger "ROS 2"
+
+    ROS 1 verziókat csak történelmi okokból tárgyalunk, a jelenlegi fejlesztésekhez a ROS 2-t ajánljuk.
 
 `ROS 1` alapvetően Linux rendszereken támogatott, bár voltak próbálkozások más operációs rendszerekre is. Ezzel szemben az `ROS 2` már támogatja a natív Windows, Mac OS vagy egyéb Real-Time operációs rendszen történő futtatást. Tehát alapvetően négy lehetőség adott:
 
@@ -47,8 +44,9 @@ Az első három opció szemléltetése:
 [![Static Badge](https://img.shields.io/badge/ROS_2-Humble-34aec5)](https://docs.ros.org/en/humble/)
 
 
-{: .warning }
-> Az ROS 1 melodic python 2.7-et támogat, ez nem ajánlott.
+!!! tip
+
+    Az ROS 1 melodic python 2.7-et támogat, ez nem ajánlott.
 
 # Ubuntu és Python
 

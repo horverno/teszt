@@ -1,26 +1,8 @@
 ---
-layout: default
-title: Tervezés
-has_children: true
-nav_order: 8
+title: Elmélet - Tervezés
 permalink: /tervezes/
+icon: material/math-integral-box # elméleti tananyag
 ---
-
- 
-
-<details markdown="block">
-  <summary>
-    Tartalom
-  </summary>
-  {: .text-delta }
-1. TOC
-{:toc}
-</details>
-
----
-
-
-
 
 # Tervezés
 
@@ -68,9 +50,9 @@ classDef red fill:#ef4638,stroke:#152742,stroke-width:2px,color:#fff
 
 ```
 
-# Globális tervezés
+## Globális tervezés
 
-## Bevezetés
+### Bevezetés
 
 Az alábbi német nyelvű, de angol PPT-t és feliratot tartalmazó videó a [TU München](https://github.com/TUMFTM/Lecture_ADSE) tananyagának része, a témában jó összefoglaló:
 
@@ -89,7 +71,7 @@ Ismertebb globális tervező algoritmusok:
 Jó tudni, hogy a fenti algoritmusokanak számos változata, továbbfejlesztése ismert.
 
 
-## Utazó ügynök probléma
+### Utazó ügynök probléma
 
 Az utazó ügynök probléma (TSP traveling salesman problem) egy jól ismert kombinatorikus optimalizációs probléma, amely a számítástudomány és a matematika területén jelent meg. A probléma lényege az, hogy az utazó ügynöknek egy adott városokból álló halmazt kell meglátogatnia, és vissza kell térnie a kiindulási városba a lehető legrövidebb úton úgy, hogy minden várost pontosan egyszer látogat meg. Tobábbi információ: [hu.wikipedia.org/wiki/Az_utazó_ügynök_problémája](https://hu.wikipedia.org/wiki/Az_utaz%C3%B3_%C3%BCgyn%C3%B6k_probl%C3%A9m%C3%A1ja).
 
@@ -98,9 +80,9 @@ Formálisan megfogalmazva, legyen adott egy irányított súlyozott **gráf**, a
 Autonóm járművek és robotika vonatkozásában legtöbbször **nem a klasszikus TSP** probléma merül fel, hanem annak derivátuma, hiszen például egy autonóm jármű esetében pontosan tudjuk honnan indulunk és hova érkezünk. Ez a klasszikus utazó ügynök probléma esetén nem ismert feltétel.
 
 
-# Lokális tervezés
+## Lokális tervezés
 
-## Bevezetés
+### Bevezetés
 
 Az alábbi német nyelvű, de angol PPT-t és feliratot tartalmazó videó a [TU München](https://github.com/TUMFTM/Lecture_ADSE) tananyagának része, a témában jó összefoglaló:
 
@@ -108,7 +90,7 @@ Az alábbi német nyelvű, de angol PPT-t és feliratot tartalmazó videó a [TU
 
 A Videóhoz tartozó [PDF fájl elérhető itt](https://www.researchgate.net/profile/Phillip-Karle-2/publication/352322244_Autonomous_Driving_Software_Engineering_-_Lecture_07_Planning_II_-_Local_Planning/links/60c36805299bf1949f4aaefb/Autonomous-Driving-Software-Engineering-Lecture-07-Planning-II-Local-Planning.pdf).
 
-## Motiváció
+### Motiváció
 
 A lokális tervezés voltaképp a valós időben mért, dinamikusan változó körülményekre adott tervezési válasz. Mit értünk ez alatt? A legegyszerűbb példa, ha a globális tervezést gyakorlatilag egy útvonal megtervezéséhez (pl. hogyan jussak el A-ból B-be) hasonlítjuk, a lokális tervezést pedig az adott sávban, adott forgalmi helyzetben történő feladathoz hasonlítjuk. Azonban láthatjuk, hogy egy tervezési szint "lokális" és "globális" mivoltja nem mindig különül el 100%-ban egymástól. Pl. megtervezzük, hogy az M1-es autópályán szeretnénk haladni. Ezen belül több sáv is van, így melyiket válasszuk? Alapból a külső sávot választjuk, ezt tekinhetjük a globális trajektóriának. Ugyanakkor menetközben sávot kell váltanunk, és így a belső sávot követjük. Ezt egy út során többször megtesszük. A teljes útra vetítve így a követni kívánt sáv időnként a belső, időnként a külső sáv lesz. Ezt előre nem tudjuk megmondani, így a legelső globális trajektória definíciót nem elégítjük ki. Tekinthetjük lokális tervezési problémának, viszont az, hogy a belső vagy külső sávot követjük, nem függ külső tényezőktől, kizárólag a döntés maga függ attól (pl. sávot váltunk egy előttünk haladó autó miatt), viszont ha már sávot váltottunk, az új sáv által kijelölt útvonal megintcsak nem függ dinamikus tényezőktől.
 Ezeket az ellentmondásokat többféleképpen is feloldhatjuk:
@@ -209,12 +191,12 @@ $$ x(s=s_{1}) = c_{0} + c_{1}s + c_{2}s_{1}^{2}+c_{3}s_{1}^{3}+c_{4}s_{1}^{4}+c_
 $$ x'(s=s_{1}) = c_{1}s + 2c_{2}s_{1}+3c_{3}s_{1}^{2}+4c_{4}s_{1}^{3}+5c_{5}s_{1}^{4} $$
 $$ x''(s=s_{1}) = 2c_{2}+6c_{3}s_{1}+12c_{4}s_{1}^{2}+20c_{5}s_{1}^{3} $$
 
-ahol $$s_{1}$$ a végpont távolsága. Ez lesz a fenti optimalizációs probléma változója. Ezt a mennyiséget tetszőleges tartományon variálva (pl. $$s_{1,max}$$ és $$s_{1,min}$$ között) keressük azt az együttható halmazt, amelyre $$J$$ költségfüggvény a legkisebb.
-Hogyan válasszuk meg a $$J$$ függvényt? Erre Werling és mtsai. a következő formulát ajánlják:
+ahol $s_{1}$ a végpont távolsága. Ez lesz a fenti optimalizációs probléma változója. Ezt a mennyiséget tetszőleges tartományon variálva (pl. $s_{1,max}$ és $s_{1,min}$ között) keressük azt az együttható halmazt, amelyre $$J$$ költségfüggvény a legkisebb.
+Hogyan válasszuk meg a $J$ függvényt? Erre Werling és mtsai. a következő formulát ajánlják:
 
 $$ C_{d} = k_{j}J_{t}(d(t)) + k_{t}T + k_{d}(d_{1})^{2} $$
 
-Ahol $$T = \dfrac{s_{1}}{v_{x}}$$ a trajektória hossza időben kifejezve, $$J_{t}$$ az ún. jerk (magyarul rántás) az oldalirányú gyorsulás deriváltja, $$d_{1}$$ a végső pontban a távolság a referencia vonaltól. Mi ezt $$d_{1}=0$$ értékre választottuk, így ez a tag kiesik. 
+Ahol $T = \dfrac{s_{1}}{v_{x}}$ a trajektória hossza időben kifejezve, $J_{t}$ az ún. jerk (magyarul rántás) az oldalirányú gyorsulás deriváltja, $d_{1}$ a végső pontban a távolság a referencia vonaltól. Mi ezt $d_{1}=0$ értékre választottuk, így ez a tag kiesik. 
 
 
 
@@ -241,7 +223,7 @@ Azaz a kezdeti feltételek adottak az objektum távolságából, illetve a sajá
 
 $$ C_t = k_jJ_t + k_tT+k_s[s_1-s_d]^2 $$
 
-Ahol $$J_t$$ a trajektória befutása során tapasztalt átlagos jerk (azaz rántás), $$T$$ a trajektória hossza időben $$s_1-s_d$$ a trajektória végén a távolság az objektumtól. A $$k$$ tényezők a súlyok.
+Ahol $J_t$ a trajektória befutása során tapasztalt átlagos jerk (azaz rántás), $T$ a trajektória hossza időben $s_1-s_d$ a trajektória végén a távolság az objektumtól. A $k$ tényezők a súlyok.
 
 <img src="abrak/longitudinal_planning.png" width="500" height="300" /> <br>
 *5. Ábra: sebességtrajektória tervezése, forrás: [1]*

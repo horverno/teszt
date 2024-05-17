@@ -1,21 +1,12 @@
 ---
 layout: default
-title: Gyakorlat
-parent: Szimuláció
+title: Gyakorlat - Gazebo saját robotszimuláció készítése
+icon: material/code-braces-box # gyakorlati tananyag
 ---
 
  
 
-<details markdown="block">
-  <summary>
-    Tartalom
-  </summary>
-  {: .text-delta }
-1. TOC
-{:toc}
-</details>
 
----
 
 
 

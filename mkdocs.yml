@@ -17,64 +17,75 @@ nav:
       - GitHub Copilot: bevezetes/copilot.md
       - ROS 1 alapfogalmak: bevezetes/ros1.md
       - Linux, git: bevezetes/linux.md
-      - VS code, git: bevezetes/vscode.md
-    - 2. Telepítés: 
+    - 2. ROS 2 koncepciók, telepítés: 
       - bevezetes/ros2.md
       - bevezetes/ros2gyak.md
+      - VS code, git: bevezetes/vscode.md
+      - telepites/ubuntu.md
+      - telepites/win10.md
       - telepites/ros_humble.md
     - 3. Érzékelés: 
       - erzekeles/README.md
       - erzekeles/practice.md
-    - 4. Féléves: 
-      - workshops/index.md
-      - F1/10 hands-on (ROS 2): workshops/f1tenth_real_a.md
-      - ROS 2 install: workshops/ros2_a.md
-      - F1/10 simulation (ROS 2): workshops/f1tenth_sim_a.md
-      - Wheeltec hands-on (ROS 1) : workshops/wheeltec_real_a.md
+    - 4. Féléves, ROS 2 további koncepiók: 
+      - feleves_beadando/README.md
+      - feleves_beadando/kisbeadando.md
+      - feleves_beadando/nagyfeleves.md
+      - bevezetes/copilot.md
+      - bevezetes/linux.md      
     - 5. Transzformációk: 
-      - transformations/index.md
-      - Transformation
+      - transzformaciok/README.md
+      - transzformaciok/practice.md
     - 6. Észlelés: 
-      - detection/index.md
-      - Detection
+      - eszleles/README.md
+      - eszleles/practice.md
+      - eszleles/ground_filter.md
+      - eszleles/road_filter.md
+      - eszleles/slam.md
     - 7. Szimuláció:
-      - simulation/index.md
-      - Simulation
+      - szimulacio/README.md
+      - szimulacio/gazebo_fortress.md
+      - szimulacio/gyakorlat.md
+      - workshops/f1tenth_sim_a.md
     - 8. Tervezés:
-      - plan/index.md
-      - Plan
+      - tervezes/README.md
+      - tervezes/practice.md
     - 9. Szabályozás:
-      - control/index.md
-      - Control
-    - 10. AI:
-      - ai/index.md
-      - AI
+      - szabalyozas/README.md
+      - szabalyozas/ros2practice.md
+    - 10. AI (mesterséges intelligencia):
+      - mesterseges_intelligencia/README.md
+      - mesterseges_intelligencia/practice.md
   - Nagy féléves, kis beadandó:
     - feleves_beadando/README.md
     - feleves_beadando/kisbeadando.md
     - feleves_beadando/nagyfeleves.md
   - Önálló:
-    - onallo/README.md
+    - onallo/ros2git.md
     - onallo/linux.md
+    - onallo/ros2launchmarker.md
+    - onallo/mermaid.md
+  - linkek/README.md
 theme:
-  logo: /img/jkk03.svg
+  logo: ../img/jkk03.svg
   name: 'material'
-  favicon: '/img/favicon.ico'
+  favicon: '../img/favicon.ico'
   palette:
     - scheme: youtube
       primary: 'custom'
       toggle:
-        icon: material/brightness-7 
+        icon: material/weather-night
         name: Switch to dark mode
     - scheme: slate
-      primary: black
-      # primary: 'custom'
+      # primary: black
+      primary: 'custom'
       toggle:
-        icon: material/brightness-4
+        icon: material/weather-sunny
         name: Switch to light mode
   features:
   - content.code.copy
   - content.code.select
+  - content.tabs.link
   # - navigation.expand      # Expand all collapsable sections.
   #- navigation.instant     # Instant loading pages.
   # - navigation.indexes     # Attach pages directly to Sections. Incompatible with "toc.integrate"
@@ -112,6 +123,7 @@ theme:
   #    quote: 'octicons/quote-16'
 extra_css:
 - stylesheets/extra.css
+# - https://unpkg.com/katex@0/dist/katex.min.css # KATEX
 extra:
   social:
     - icon: 'fontawesome/brands/github'
@@ -123,12 +135,29 @@ markdown_extensions:
         - name: mermaid
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
   - md_in_html
   - markdown.extensions.admonition:
   - markdown.extensions.codehilite:
       guess_lang: false
   - markdown.extensions.toc:
       permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+
+# extra_javascript: 
+#   - javascripts/katex.js # KATEX
+#   - https://unpkg.com/katex@0/dist/katex.min.js # KATEX
+#   - https://unpkg.com/katex@0/dist/contrib/auto-render.min.js # KATEX
+
+
   #- pymdownx.arithmex:
   #- pymdownx.b64:
   #- pymdownx.betterem:

@@ -1,7 +1,6 @@
 ---
-layout: default
 title: Road filter
-parent: Észlelés
+icon: material/code-block-tags # kiegészítő tananyag
 ---
 
 # Road filter

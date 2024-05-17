@@ -6,16 +6,7 @@ parent: Önálló feladatok
 
  
 
-<details markdown="block">
-  <summary>
-    Tartalom
-  </summary>
-  {: .text-delta }
-1. TOC
-{:toc}
-</details>
 
----
 
 
 # Mermaid gyakorlás
@@ -26,15 +17,16 @@ A mermaid hasznos kiegészője lehet a markdown fájlainknak (pl `README.md`). K
 
 Bal oldalt az Extension ikonra kattintva vagy a `Ctrl` + `Shift` + `X` után a meraid kulcsszót beírva előjön a Markdown Preview kiegészítő, ez egy katintással telepíthető és használhat is. Ezután a Markdown előnézetében (`Ctrl` + `Shift` + `V` vagy felső ikon) már látható is lesz az előlnézet. 
 <center>
-<img src="mermaid01.png" width="60%" />
-<img src="mermaid02.png" width="90%" />
+<img src="/onallo/mermaid01.png" width="60%" />
+<img src="/onallo/mermaid02.png" width="90%" />
 </center>
 
 Célszerű a *Mermaid Markdown Syntax Highlighting* és a *Color Highlight* extension-t is használni, ekkor a következőképp jelenik meg a gráf kódja:
 
 <center>
-<img src="mermaid03.png" width="90%" />
+<img src="/onallo/mermaid03.png" width="90%" />
 </center>
+
 # Példák
 
 
@@ -302,7 +294,7 @@ flowchart TD
     class O light
     class S dash
     class CAN red
- ``` 
+``` 
 
 ```mermaid
 flowchart TD
@@ -329,7 +321,7 @@ flowchart TD
     class O light
     class S dash
     class CAN red
- ``` 
+``` 
 
 ## Körcikk
 

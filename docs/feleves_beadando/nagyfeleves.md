@@ -1,24 +1,10 @@
 ---
-layout: default
 title: Nagy féléves
-parent: Kis beadandó és nagy féléves
 permalink: /nagy_feleves/
+icon: material/school
 ---
 
  
-
-<details markdown="block">
-  <summary>
-    Tartalom
-  </summary>
-  {: .text-delta }
-1. TOC
-{:toc}
-</details>
-
----
-
-
 
 # Nagy féléves
 

@@ -1,21 +1,11 @@
 ---
-layout: default
 title: SLAM és LOAM
-parent: Észlelés
+icon: material/code-block-tags # kiegészítő tananyag
 ---
 
  
 
-<details markdown="block">
-  <summary>
-    Tartalom
-  </summary>
-  {: .text-delta }
-1. TOC
-{:toc}
-</details>
 
----
 
 
 

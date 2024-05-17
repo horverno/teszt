@@ -1,21 +1,13 @@
 ---
 layout: default
-title: Gazebo Fortress ROS 2
+title: Gyakorlat - Gazebo Fortress ROS 2
 parent: Szimuláció
+icon: material/code-braces-box # gyakorlati tananyag
 ---
 
  
 
-<details markdown="block">
-  <summary>
-    Tartalom
-  </summary>
-  {: .text-delta }
-1. TOC
-{:toc}
-</details>
 
----
 
 
 

@@ -82,7 +82,13 @@ Oktatók | | | .
 - **5 (jeles)**: Nagy féléves beadandó a [megadott irányelvek](https://sze-info.github.io/arj/feleves_beadando/) mentén, csak néhány kisebb hibával teljesítve
 
 
-Érintett témakörök (nem a feldolgozás szerinti sorrendben)
+## Konvenciók
+
+- :material-code-braces-box:  gyakorlati tananyag
+- :material-math-integral-box:  elméleti tananyag
+- :material-code-block-tags:  kiegészítő tananyag, a teljes kép megértéséhez szükséges lehet
+
+## Érintett témakörök (nem a feldolgozás szerinti sorrendben)
 
 - Bevezetés: Önvezető / autonóm járművek bevezetése: az aktuális helyzet, múlt és jövő. Szenzorok, aktuátorok kommunikációs technológiák. (LIDAR, radar, aktív és passzív kamera, GPS, odometria, IMU, CAN) Foxglove studio és saját mérések szemlétetésképp				
 - Szoftverrendszer: Önvezető / autonóm járművek szoftverei: érzékelés, észlelés, tervezés, követés. Szimulációs technológiák, felhasználói felületek. Keretrendszerek: ROS/ROS2/MATLAB/LabVIEW szererepe, valós idejű rendszerek (FPGA, real-time operációs rendszerek).				

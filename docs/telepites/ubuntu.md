@@ -1,7 +1,6 @@
 ---
-layout: default
 title: Ubuntu dual boot
-parent: Telepítés
+icon: material/code-block-tags # kiegészítő tananyag
 ---
 
 # Ubuntu dual boot

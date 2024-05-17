@@ -3,7 +3,7 @@ layout: default
 title: Gépterem
 parent: Bevezetés
 # icon: material/plus-outline
-icon: material/code-block-tags
+icon: material/code-block-tags # kiegészítő tananyag
 ---
 
 # Géptermi ismeretek (`C100`)

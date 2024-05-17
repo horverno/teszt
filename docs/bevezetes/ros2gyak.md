@@ -2,7 +2,7 @@
 layout: default
 title: Gyakrolat - ROS 2 alapok
 parent: Bevezetés
-icon: material/code-braces-box
+icon: material/code-braces-box # gyakorlati tananyag
 ---
 
 # `ROS 2` bevezetés és gyakorlat
@@ -19,7 +19,7 @@ Pár alapfogalom az [előző](https://sze-info.github.io/arj/bevezetes/ros2.html
 - **Publish / subscribe**: Üzenetekre történő publikálás és feliratkozás. 
 - **Build**: A package forráskódjából futtatható állományok készítésének folyamata. ROS2-ben a `colcon` az alapértelmezett build eszköz. 
 
-# `1.` feladat - Node és publish
+## `1.` feladat - Node és publish
 
 Nyissunk két terminált. Az első terminálból indítsuk a beépített `turtlesim_node` szimulátort, ami a `turtlesim` package-ben található.
 
@@ -91,10 +91,10 @@ ros2 topic echo /turtle1/pose --once | grep velocity
 ros2 topic echo /turtle1/pose | grep x
 ```
 
-# Workspace és build tudnivalók
+### Workspace és build tudnivalók
 Első lépésként az `ls ~ | grep ros2` parancs segítségével ellenőrizzük, hogy létezik-e a workspace a home directoryban(`~`). A tantárgyban a workspace-t `ros2_ws`-nek nevezzük. A név igazából nem számít, de a legtöbb tutorial is ezt a nevet használja, így mi is követjük ezt a hagyományt. Több workspace is használható egyidejüleg, külön source-olható, nagyobb rendszereknél ez kényelmes megoldás lehet. Mi egyelőre maradunk az egytelen `ros2_ws`-nél. Ha nem létezne a `mkdir -p ros2_ws/src` parancs segítségével készíthetjük el a workspace és a source mappákat.
 
-## Colcon
+### Colcon
 A legfontosabb parancs talán a `colcon build`. Említésre méltó még a `colcon list` és a `colcon graph`. Előbbi listázza az elérhető packageket, utóbbi pedig a függőségekről ad gyors nézetet.
 
 A `colcon build` számos hasznos kapcsolóval érkezik:
@@ -103,7 +103,7 @@ A `colcon build` számos hasznos kapcsolóval érkezik:
 - `--parallel-workers 2`: A párhuzamosan feldolgozható feladatok maximális száma, ebben az esetben `2`. Ha nincs megadva, akkor az alapértelmezett érték a logikai CPU magok száma. Akkor érdemes korlátozni, ha a build nem fut végig erőforrás hiány miatt. 
 - `--continue-on-error`: Nagyobb build esetén, ne álljon meg az első hibás package után. Így ha 100 packageből 1 nem működne, akkor is 99 buildelődik. Ha ez nincs megadva, akkor 0 és 99 közötti package buildelődik, a függőségek és egyéb sorrendiségek alapján. 
 
-## Source
+### Source
 Ahhoz hogy az ROS2 futtatható fájlainkat valóban el tudjuk indítani, be kell állíani a be a környezetet (úgynevezett source-olás), tehát meg kell adni a bash számára, hogy hol keresse az adott futtatható fájlokat, azoknak milyen függőségei vannak stb. Ez egyszerűbb, mint hangzik, csak egy `source <útvonal>/<név>.bash` parancsot kell kiadni. Korábban írtuk, hogy a worksapce neve nem számít, és valóban, a source megadása után mindegy, hogy fizikailag hol található a futtatható állomány, kényelmesen elindítható egy paranccsal bármelyik mappából. 
 Mivel a packagek különböző workspace-eken belül egymásra is épülhetnek, az ROS2 bevezette az overlay / underlay elvet. Ez azt jelenti, hogy egyik workspace buildelésekor egy másik workspace már be volt source-olva, annak valamely package-e függ a az előzőleg lebuildelt package-től. Tehát annak funkcionalitása, kódja szükséges a ráépülő package-nek. Ennek megfeleően a source-olás is kétféle lehet:
 - A `local_setup.bash` script csak a jelenlegi workspace-ben állítja be a környezetet (source-ol). Tehát nem source-ol szülő (függő) workspace-t.
@@ -112,7 +112,7 @@ Mivel a packagek különböző workspace-eken belül egymásra is épülhetnek, 
 !!! note 
 A tantárgyban nem kell ilyen összetett rendszereket használni, legtöbbször egy `ros2_ws` is elég.
 
-# `2.` feladat - Package build és használat
+## `2.` feladat - Package build és használat
 
 [docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Creating-A-Workspace/Creating-A-Workspace.html](https://docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Creating-A-Workspace/Creating-A-Workspace.html)
 
@@ -254,7 +254,7 @@ ros2 launch arj_intro_cpp turtle.launch.py
 Vizsgáljuk meg a package tartalmát röviden a `code ~/ros2_ws/src/arj_packages/arj_intro_cpp` parancs után.
 
 
-# `3.` feladat - Saját package készítése
+## `3.` feladat - Saját package készítése
 
 A feladat a hivatalos ROS2 dokumentáción alapul: [docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Creating-Your-First-ROS2-Package.html](https://docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Creating-Your-First-ROS2-Package.html). Készítsük el a `my_package` nevű ROS 2 package-t.
 
@@ -367,17 +367,19 @@ code ~/ros2_ws/src/my_package
 ```
 
 
-{: .note }
+!!! tip
+
+    note }
 A `code` parancs után fájlt megadva a fájl niytódik meg, míg mappát (könyvtárat) megadva az adott mappa tartalma nyílik meg. Gyakran forul elő, hogy például egy adott package-ben vagyunk és szeretnénk az aktuális mappát megnyitni. Ezt megtehetjük a `code .` paranccsal, amikoris az aktuális mappa nyitódik meg, hiszen a `.` karakter az aktuális mappát jelenti linuxban. 
 
-# `4.` feladat - C++ publisher / subscriber
+## `4.` feladat - C++ publisher / subscriber
 
 A gyakorlat a hivatalos ROS 2 tutorialokon alapszik: [docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Writing-A-Simple-Cpp-Publisher-And-Subscriber.html](https://docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Writing-A-Simple-Cpp-Publisher-And-Subscriber.html)
 
 - [C++ publisher](https://github.com/ros2/examples/blob/humble/rclcpp/topics/minimal_publisher/member_function.cpp)
 - [C++ subscriber](https://github.com/ros2/examples/blob/humble/rclcpp/topics/minimal_subscriber/member_function.cpp)
 
-## Hozzuk létre a `cpp_pubsub` package-t
+### Hozzuk létre a `cpp_pubsub` package-t
 
 Nyissunk egy új terminált, és source-oljunk a telepítést, hogy a `ros2` parancsok működjenek.
 
@@ -393,7 +395,7 @@ A terminál egy üzenetet küld vissza, amely megerősíti a ``cpp_pubsub`` csom
 
 
 
-## Írjuk meg a publisher node-ot
+### Írjuk meg a publisher node-ot
 
 Lépjünk a ``ros2_ws/src/cpp_pubsub/src`` mappába.
 Ez az a könyvtár minden CMake package-ben, ahová a forrásfájlok tartoznak (pl `.cpp` kiterjesztéssel).
@@ -455,7 +457,7 @@ int main(int argc, char * argv[])
 ```
 
 
-## Függőségek hozzáadása
+### Függőségek hozzáadása
 
 Lépjünk vissza egy szinttel a ``ros2_ws/src/cpp_pubsub`` könyvtárba, ahol a ``CMakeLists.txt`` és a ``package.xml`` fájlok már létrejöttek.
 
@@ -483,7 +485,7 @@ Adjunk hozzá egy új sort az ``ament_cmake`` buildtool függősége után, és 
 Ez deklarálja, hogy a pacakge-nek szükséges az ``rclcpp`` és a ``std_msgs`` fordításkor és futtatáskor.
 
 
-## CMakeLists.txt
+### CMakeLists.txt
 
 Most nyissuk meg a ``CMakeLists.txt`` fájlt.
 A meglévő ``find_package(ament_cmake REQUIRED)`` függőség alá adjuk hozzá a következő sorokat:
@@ -546,7 +548,7 @@ cd ~/ros2_ws/
 ``` bash
 colcon build --packages-select cpp_pubsub
 ```
-## Írjuk meg a subscriber node-ot
+### Írjuk meg a subscriber node-ot
 
 A subscriber node elkészítését a következő tutorial 3-a pontja is leírja: [docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Writing-A-Simple-Cpp-Publisher-And-Subscriber.html](https://docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Writing-A-Simple-Cpp-Publisher-And-Subscriber.html#id8)
 
@@ -574,7 +576,7 @@ install(TARGETS
   DESTINATION lib/${PROJECT_NAME})
 ```
 
-## Fordítsuk a package-t
+### Fordítsuk a package-t
 
 ``` bash
 cd ~/ros2_ws/
@@ -616,9 +618,93 @@ ros2 run cpp_pubsub listener
 [INFO] [minimal_subscriber]: I heard: "Hello World: 14"
 ```
 
-# `5.` feladat - Python publisher / subscriber
+## `5.` feladat - Python publisher / subscriber
 
 A gyakorlat a hivatalos ROS 2 tutorialokon alapszik: [docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Writing-A-Simple-Py-Publisher-And-Subscriber.html](https://docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Writing-A-Simple-Py-Publisher-And-Subscriber.html)
+
+
+
+=== "Python"
+
+    ``` py linenums="1"
+    import rclpy      ## ROS2 Python API 
+    from std_msgs.msg import String ## ROS2 Standard String
+    from rclpy.node import Node 
+
+
+
+
+    ## MinimalPublisher osztály
+    class MinimalPublisher(Node):
+
+        def __init__(self):
+            super().__init__('minimal_publisher')
+            self.publisher_ = self.create_publisher(String, 'topic', 10)
+            timer_period = 0.5  # seconds
+            self.timer = self.create_timer(timer_period, self.timer_callback)
+            self.i = 0
+
+        def timer_callback(self):
+            msg = String()
+            msg.data = 'Hello World: %d' % self.i
+            self.publisher_.publish(msg)
+            self.get_logger().info('Publishing: "%s"' % msg.data)
+            self.i += 1
+
+
+
+
+
+    def main(args=None):
+        rclpy.init(args=args)
+        minimal_publisher = MinimalPublisher()
+        rclpy.spin(minimal_publisher)
+        minimal_publisher.destroy_node()
+        rclpy.shutdown()
+
+
+    if __name__ == '__main__':
+        main()
+    ```
+
+=== "C++" 
+
+    ``` c++ linenums="1"
+    #include "rclcpp/rclcpp.hpp" // ROS2 C++ API 
+    #include "std_msgs/msg/string.hpp" // ROS2 standard String
+    #include <chrono>
+    #include <functional>
+    #include <memory>
+    #include <string>
+    using namespace std::chrono_literals;
+    // MinimalPublisher osztály
+    class MinimalPublisher : public rclcpp::Node
+    {
+        public: MinimalPublisher() : Node("minimal_publisher"), count_(0) {
+            publisher_ = this->create_publisher<std_msgs::msg::String>("topic", 10);
+            timer_ = this->create_wall_timer(
+            500ms, std::bind(&MinimalPublisher::timer_callback, this));
+        }
+
+        private:
+        void timer_callback(){
+            auto message = std_msgs::msg::String();
+            message.data = "Hello, world! " + std::to_string(count_++);
+            RCLCPP_INFO(this->get_logger(), "Publishing: '%s'", message.data.c_str());
+            publisher_->publish(message);
+        }
+        rclcpp::TimerBase::SharedPtr timer_;
+        rclcpp::Publisher<std_msgs::msg::String>::SharedPtr publisher_;
+        size_t count_;
+    };
+
+    int main(int argc, char * argv[]){
+        rclcpp::init(argc, argv);
+        rclcpp::spin(std::make_shared<MinimalPublisher>());
+        rclcpp::shutdown();
+        return 0;
+    }
+    ```
 
 
 - [Python publisher](https://github.com/ros2/examples/blob/humble/rclpy/topics/minimal_publisher/examples_rclpy_minimal_publisher/publisher_member_function.py)

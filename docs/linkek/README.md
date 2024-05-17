@@ -1,24 +1,10 @@
 ---
-layout: default
 title: Linkek
-has_children: false
-nav_order: 11
 permalink: /linkek/
+hide:
+  # - toc
+  - navigation
 ---
-
- 
-
-<details open markdown="block">
-  <summary>
-    Tartalom
-  </summary>
-  {: .text-delta }
-1. TOC
-{:toc}
-</details>
-
----
-
 
 # Linkek
 

@@ -6,16 +6,7 @@ parent: Önálló feladatok
 
  
 
-<details markdown="block">
-  <summary>
-    Tartalom
-  </summary>
-  {: .text-delta }
-1. TOC
-{:toc}
-</details>
 
----
 
 
 # Git alapismeretek

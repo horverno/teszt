@@ -1,22 +1,7 @@
 ---
-layout: default
-title: Szimuláció
-has_children: true
-nav_order: 7
+title: Elmélet - Szimuláció
 permalink: /szimulacio/
----
-
- 
-
-<details markdown="block">
-  <summary>
-    Tartalom
-  </summary>
-  {: .text-delta }
-1. TOC
-{:toc}
-</details>
-
+icon: material/math-integral-box # elméleti tananyag
 ---
 
 
