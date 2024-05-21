@@ -57,8 +57,8 @@ Az alábbi példák nem feltétlenül féléves munkának készültek, de annak 
 - Korábbi szakdolgozatok, félévesek elérhetőek, ezeket igényelni [itt lehet](https://docs.google.com/forms/d/e/1FAIpQLSdtMK--IQl4v5pHiATDP4MJwuU-M0Ycd2keMndQfuuhvlr1rA/viewform?usp=sf_link). Fontos, hogy ezeket **tilos** továbbosztani, csak oktatási céllal állnak rendelkezésre.
 - Számos ROS 2 projekt itt: [github.com/fkromer/awesome-ros2](https://github.com/fkromer/awesome-ros2)
 
-{: .new }
-Erősen ajánlott a [GitHub Student Developer Pack](https://education.github.com/pack) beszerzése, többek között [Copilot](https://github.com/features/copilot) is jár hozzá.
+!!! tip
+    Erősen ajánlott a [GitHub Student Developer Pack](https://education.github.com/pack) beszerzése, többek között [Copilot](https://github.com/features/copilot) is jár hozzá.
 
 ![](https://github.blog/wp-content/uploads/2019/08/FBLinkedIn_ALL-PARTNERS.png)
 
@@ -83,8 +83,8 @@ C++ és Python nyelven is létrehoztunk egy úgynevezett template repo-t, amely 
 - [github.com/sze-info/ros2_cpp_template](https://github.com/sze-info/ros2_cpp_template)
 - [github.com/sze-info/ros2_py_template](https://github.com/sze-info/ros2_py_template)
 
-{: .new }
-Erről [leírás itt](https://sze-info.github.io/arj/onallo/ros2git.html) olvasható.
+!!! info
+    Erről [leírás itt](https://sze-info.github.io/arj/onallo/ros2git.html) olvasható.
 
 <img src="https://raw.githubusercontent.com/sze-info/ros2_cpp_template/main/img/use_this_template01.png" width="60%" />
 

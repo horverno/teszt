@@ -117,11 +117,11 @@ git status
 ``` 
 
 
-<img src="git_status01.png" width="100%" />
+<img src="/onallo/git_status01.png" width="100%" />
 
 Ugyanez VS code-ban így néz ki:
 
-<img src="git_status02.png" width="100%" />
+<img src="/onallo/git_status02.png" width="100%" />
 
 # Távoli repo frissítése `git push` segítségével
 
@@ -144,18 +144,18 @@ git push
 ```
 
 
-<img src="git_status03.png" width="100%" />
+<img src="/onallo/git_status03.png" width="100%" />
 
 VS code-ban ez is egyszerűbb, __Commit__, majd __Sync Changes__:
 
-<img src="git_push01.png" width="80%" />
+<img src="/onallo/git_push01.png" width="80%" />
 
 
 # Lokális repo frissítése `git pull` segítségével
 
 Abban az esetben, ha nem a legfrissebb verzió lenne lokálisan, a github-on online tárolt remote lefrissítehető:
 
-<img src="git_pull01.png" width="100%" />
+<img src="/onallo/git_pull01.png" width="100%" />
 
 
 # Források

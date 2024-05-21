@@ -10,6 +10,7 @@ icon: material/math-compass
 A kis beadandó célja, hogy a hallgatók az órán megszerzett kezdő szintű elméleti tudás mellé **gyakorlati** tapasztalatot szerezzenek ROS 2-ről és GitHub-ról. A kis beadandó viszonylag **kevés idő** alatt elvégezhető: egy oktató pár óra alatt, egy átlag hallgató pár délután alatt elkészülhet vele. Fontos, hogy a beadandó **aláírás feltétel**.
 
 Elvárt kvalitások:
+
 - Egy package, 1 vagy 2 node
 - Minimum 1 publisher vagy 1 subscriber (több lehet)
 - Rövid dokumentáció, ami a build menetét, a node-topic kapcsolatokat tartalmazza, a [példák](#példák) szerinti részletességgel
@@ -52,7 +53,7 @@ C++ és Python nyelven is létrehoztunk egy úgynevezett template repo-t, amely 
 <img src="https://raw.githubusercontent.com/sze-info/ros2_cpp_template/main/img/use_this_template01.png" width="60%" />
 
 
-# Repo neve
+## Repo neve
 - A repository neve a következő mintát kövesse: `VVV_NNN_opcionalis`, ahol
   - a `VVV` a vezetéknév első 3 karaktere
   - az `NNN` a neptunkód első 3 karaktere

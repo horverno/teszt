@@ -1,12 +1,12 @@
-site_name: Autonóm robotok és járművek programozása
+site_name: Autonóm járművek és robotok programozása
 site_description: 'Research Center of Vehicle Industry'
 site_author: 'jkk-research'
 site_url: 'https://jkk-research.github.io' # Uncomment to set a canonical URL
 copyright: |
-  &copy; Author
+  &copy; Széchenyi István Egyetem 
 docs_dir: docs/
 
-repo_url: https://horverno.github.io/teszt/
+repo_url: https://sze-info.github.io/ajr/
 nav:
   - index.md
   - Tananyag:
@@ -67,9 +67,9 @@ nav:
     - onallo/mermaid.md
   - linkek/README.md
 theme:
-  logo: ../img/jkk03.svg
+  # logo: ../img/jkk03.svg
   name: 'material'
-  favicon: '../img/favicon.ico'
+  favicon: '"https://raw.githubusercontent.com/sze-info/arj/main/docs/_images/favicon.svg'
   palette:
     - scheme: youtube
       primary: 'custom'
@@ -106,8 +106,8 @@ theme:
   # - toc.integrate          # Include the TOC sections in the left navugation.
   - toc.follow
   icon:
-    logo: 'material/library'
-    repo: 'material/library'
+    logo: 'material/robot-mower'
+    repo: 'material/github'
   #admonition:
   #    note: 'octicons/tag-16'
   #    abstract: 'octicons/checklist-16'
@@ -128,6 +128,13 @@ extra:
   social:
     - icon: 'fontawesome/brands/github'
       link: 'https://jkk-research/jkk-research.github.io'
+  alternate:
+    - name: Magyar
+      link: https://sze-info.github.io/ajr/ 
+      lang: hu
+    - name: English
+      link: https://sze-info.github.io/ajv/ 
+      lang: en
 markdown_extensions:
   - attr_list
   - pymdownx.superfences:
@@ -138,6 +145,9 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.tabbed:
       alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg    
   - md_in_html
   - markdown.extensions.admonition:
   - markdown.extensions.codehilite:
@@ -146,7 +156,6 @@ markdown_extensions:
       permalink: true
   - pymdownx.arithmatex:
       generic: true
-
 extra_javascript:
   - javascripts/mathjax.js
   - https://polyfill.io/v3/polyfill.min.js?features=es6
@@ -182,9 +191,7 @@ extra_javascript:
   #- pymdownx.tabbed:
   #- pymdownx.tasklist:
   #- pymdownx.tilde:
-  - pymdownx.emoji:
-      emoji_index: !!python/name:material.extensions.emoji.twemoji
-      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
   # - pymdownx.highlight:
   #   anchor_linenums: true
   #   line_spans: __span
