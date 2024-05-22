@@ -14,7 +14,7 @@ A gyakorlat második részében egy szimulált trajektóriakövető robot / jár
 
 - [`1. feladat`: Trajektóriakövetés szimulációval](#1-feladat-trajektóriakövetés-szimulációval)
 - [`2. feladat`:  Saját fejlesztésű szabályzó és jármű modell](#2-feladat--saját-fejlesztésű-szabályzó-és-jármű-modell)
-- [`3. feladat`: PID hangolás](#3-feladat-pid-hangolás)
+- [`3. feladat`: PID hangolás](#3-feladat-pid-hangolas)
 
 
 
@@ -60,12 +60,12 @@ colcon build --packages-select wayp_plan_tools sim_wayp_plan_tools
 ```
 ### `wayp_plan_tools` használata szimulátorként
 
-#### 1. A gazebo indítása
+#### 1.1. A gazebo indítása
 ```
 ign gazebo -v 4 -r ackermann_steering.sdf
 ```
 
-#### 2. A Gazebo bridge indítása
+#### 1.2. A Gazebo bridge indítása
 
 Ha esetleg nem lenne telepítve a bridge, a következő parancsok segítenek:
 ``` bash
@@ -117,7 +117,7 @@ Ez a `launch` a `PoseArray`-ből egy `/tf`-et is készít a `pose_arr_to_tf`.
 ros2 run teleop_twist_keyboard teleop_twist_keyboard --ros-args -r /cmd_vel:=/model/vehicle_blue/cmd_vel
 ```
 
-#### 3. Waypointok betöltése
+#### 1.3. Waypointok betöltése
 
 **Megjegyzés:** A waypointok egy ponthalmaz, amely az útvonal pozíció, orientáció és sebesség adatait tartalmazza diszkrét pontokra osztva. Ezeket az adatokat jellemzően úgy nyerjük ki hogy az útunk során ROS-ben rögzítjük a gps-től vagy az odometriától az x,y esetleg z koordinátákat, az aktuálishoz képest a következő pontra mutató orientációt és az éppen aktuális sebesség adatot. Végül az imént felsoroltakat csv fájlokban rögzítjük.  
 
@@ -130,7 +130,7 @@ Vagy az alapparaméterekel:
 ``` r
 ros2 launch sim_wayp_plan_tools waypoint_loader.launch.py
 ```
-#### 4. Waypoint goal pose-ként
+#### 1.4. Waypoint goal pose-ként
 Ahogy az elméleti rész 4. fejezetben az ábrákon látható, minden szabályozási algoritmushoz tartozik egy vagy több goal pose amire az éppen működő szabálzó szabályoz. 
 
 ``` r
@@ -141,7 +141,7 @@ Vagy az alapparaméterekel:
 ``` r
 ros2 launch sim_wayp_plan_tools waypoint_to_target.launch.py
 ```
-#### 5. A szabályzás indítása:
+#### 1.5. A szabályzás indítása:
 
 Több lehetőség van:
 - `single_goal_pursuit`: Pure pursuit (for vehicles / robots), a simple cross-track error method
@@ -159,7 +159,7 @@ Vagy az alapparaméterekel:
 ``` r
 ros2 launch sim_wayp_plan_tools single_goal_pursuit.launch.py
 ```
-#### 6. Az eredmények vizualizálása `RViz2`-ben:
+#### 1.6. Az eredmények vizualizálása `RViz2`-ben:
 ``` r
 ros2 launch sim_wayp_plan_tools rviz1.launch.py
 ```

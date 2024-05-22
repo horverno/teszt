@@ -35,7 +35,7 @@ A következő leírás a [docs.ros.org/en/humble/Installation.html](https://docs
 ## Nyelv beállítása
 
 !!! note 
-Ez a lépés általában kihagyható
+    Ez a lépés általában kihagyható
  
 
 Győződjön meg arról, hogy olyan területi beállítással rendelkezik, amely támogatja az UTF-8 szabványt. 

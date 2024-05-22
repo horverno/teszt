@@ -33,6 +33,7 @@ A big thank you goes to the following people/groups:
 ## Commands
 
 ``` r
+$ git clone https://github.com/sze-info/ajr/ && cd ajr
 $ pip install mkdocs
 $ pip install mkdocs-material
 $ mkdocs build

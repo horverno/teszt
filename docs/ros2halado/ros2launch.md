@@ -1,7 +1,6 @@
 ---
-layout: default
-title: ROS2 launch
-parent: ROS 2 haladó 
+title: ROS 2 launch
+icon: material/code-block-tags # kiegészítő tananyag
 ---
 
  
@@ -219,7 +218,7 @@ cd ~/ros2_ws/src/example_launch
 code .
 ```
 
-<img src="vscode06.png" width="60%" />
+<img src="/ros2halado/vscode06.png" width="60%" />
 
 
 A package.xml-hez a `<test_depend>` elé szúrjuk be következő sort:

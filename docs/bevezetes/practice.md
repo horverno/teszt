@@ -18,8 +18,8 @@ Bevezetésképpen nézzük egy önvezető jármű jellemző adatait. Példaképp
 
 Órán a `K:\` meghajtóról (`\\fs-kab.eik.sze.hu\C100\kozos\GKNB_AUTM078_Autonóm_robotok_és_járművek_programozása`), otthon a zöld gombot használva töltsük le a fent vizualizált rosbag `.bag` / `.mcap` fájlt és a Foxglove Studio layout-ot:
 
-[MCAP letöltése 553 MB](https://laesze-my.sharepoint.com/:u:/g/personal/herno_o365_sze_hu/Eclwzn42FS9GunGay5LPq-EBA6U1dZseBFNDrr6P0MwB2w?download=1){: .btn .btn-green .mr-4 } 
-[Layout letöltése](https://raw.githubusercontent.com/sze-info/arj/main/docs/bevezetes/lexus01foxglove.json){: .btn .btn-blue }
+[MCAP letöltése :material-download: 553 MB](https://laesze-my.sharepoint.com/:u:/g/personal/herno_o365_sze_hu/Eclwzn42FS9GunGay5LPq-EBA6U1dZseBFNDrr6P0MwB2w?download=1){ .md-button .md-button--primary}
+[Layout letöltése :material-auto-download:](https://raw.githubusercontent.com/sze-info/arj/main/docs/bevezetes/lexus01foxglove.json){ .md-button }
 
 
 
@@ -30,12 +30,13 @@ rsync -avzh --progress /mnt/kozos/measurement_files/lexus3-2024-04-05-gyor.mcap 
 rsync -avzh --progress /mnt/kozos/measurement_files/lexus01foxglove.json   /mnt/c/temp/
 ```
 
-{: .new }
-A [https://jkk-research.github.io/#dataset](https://jkk-research.github.io/#dataset) oldalról további példa adatokat lehet letölteni.
+!!! tip
+    A [https://jkk-research.github.io/#dataset](https://jkk-research.github.io/#dataset) oldalról további példa adatokat lehet letölteni.
 
 ## A Foxglove bemutatása
 
 Amíg az `.mcap` töltődik, röviden bemutatjuk a Foxglove Studio programot. A Foxglove Studio egy nyílt forráskódú, robotikai adatokat vizualizáló és hibakereső eszköz. Egész pontosan a `v1.87.0`-ig bezárólag nyílt forráskódu volt, a `v2.0.0`-tól pedig ingyenesen használható, de zárt forráskódú. Elérhető számos módon:
+
 - önálló asztali alkalmazásként futtatható
 - böngészőben hozzáférhető
 - saját domainen, önállóan hostolható
@@ -49,6 +50,7 @@ Ezek a panelok ezután egyedi elrendezésekben konfigurálhatók és összeáll�
 ## Az egytemi Nissan mérésadatainak leírása
 
 ROS rendszerben (de más hasonló robotikai megoldásokban is) az egyes adatok [topic](http://wiki.ros.org/Topics)-okba szerveződve vannak publikálva. Egy topic lehet például egy szenzor kimenete, egy szabályzó bemenete, vizualizációs marker stb. A topicoknak [típusuk](http://wiki.ros.org/Messages) van, rengeteg előre definiált típus létezik, de létrehozhatunk sajátot is, ha ezek nem lennének elegek. Példaképp pár előre definiált típus:
+
 -  [`sensor_msgs/Image`](http://docs.ros.org/en/noetic/api/sensor_msgs/html/msg/Image.html) - Tömörítés nélküli képi információ, jellemzően a kamerától jön, de lehet feldolgozott adat, amin például jelölve vannak a gyalogosok is.
 -  [`sensor_msgs/CompressedImage`](http://docs.ros.org/en/noetic/api/sensor_msgs/html/msg/CompressedImage.html) - Tömörített képi információ.
 -  [`std_msgs/String`](http://docs.ros.org/en/noetic/api/std_msgs/html/msg/String.html) - Egyszerű szöveges üzenettípus.

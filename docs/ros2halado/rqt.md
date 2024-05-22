@@ -1,7 +1,5 @@
 ---
-layout: default
-title: rqt
-parent: ROS 2 haladó 
+title: Rqt
 ---
 
  

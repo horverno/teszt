@@ -15,7 +15,6 @@ nav:
       - bevezetes/practice.md
       - bevezetes/gepterem.md
       - GitHub Copilot: bevezetes/copilot.md
-      - ROS 1 alapfogalmak: bevezetes/ros1.md
       - Linux, git: bevezetes/linux.md
     - 2. ROS 2 koncepciók, telepítés: 
       - bevezetes/ros2.md
@@ -32,7 +31,8 @@ nav:
       - feleves_beadando/kisbeadando.md
       - feleves_beadando/nagyfeleves.md
       - bevezetes/copilot.md
-      - bevezetes/linux.md      
+      - bevezetes/linux.md  
+      - ros2halado/ros2launch.md    
     - 5. Transzformációk: 
       - transzformaciok/README.md
       - transzformaciok/practice.md
@@ -61,15 +61,24 @@ nav:
     - feleves_beadando/kisbeadando.md
     - feleves_beadando/nagyfeleves.md
   - Önálló:
+    - ros2halado/py_cpp.md    
     - onallo/ros2git.md
     - onallo/linux.md
     - onallo/ros2launchmarker.md
     - onallo/mermaid.md
+    - ros2halado/rqt.md    
+    - ros2halado/qos.md    
+    - ros2halado/mcap.md    
+    - ros2halado/docker.md    
+    - ros2halado/state.md    
+    - ros2halado/vizualizacio.md    
+    - ros2halado/pointcloud_to_grid.md
   - linkek/README.md
+  - Moodle: https://szelearning.sze.hu/course/view.php?id=13973
 theme:
   # logo: ../img/jkk03.svg
   name: 'material'
-  favicon: '"https://raw.githubusercontent.com/sze-info/arj/main/docs/_images/favicon.svg'
+  favicon: 'https://raw.githubusercontent.com/sze-info/arj/main/docs/_images/favicon.svg'
   palette:
     - scheme: youtube
       primary: 'custom'

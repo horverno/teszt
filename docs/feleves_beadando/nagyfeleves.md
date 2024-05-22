@@ -14,10 +14,12 @@ A nagy féléves projekt elkészítése több időt igényel, azonban lehetősé
 ## Példák
 
 Példa a nagy félévesre, amit az oktatók készítettek:
+
 - [github.com/horverno/simple_random_trees](https://github.com/horverno/simple_random_trees): A package egy egyszerű útvonaltervezésre használható véletlenszerű fa algoritmus. Ez a megvalósítása a vizualizációra összpontosít, nem pedig egy átfogó véletlenszerű fa-alapú útvonal tervező rendszer. A `/display_tree
 node` egy `/path_marker_topic`-ot hirdet, ami `visualization_msgs/marker_array` típusú. A faadatstrukúrát megvalósító függvények külön header fájlban kaptak helyet. Megvalósítás `ROS 2 Humble` alatt.
 
 Az alábbi példák nem feltétlenül féléves munkának készültek, de annak elfogadhatóak lennének:
+
 - [github.com/jkk-research/wayp_plan_tools](https://github.com/jkk-research/wayp_plan_tools)
 - [github.com/jkk-research/sim_wayp_plan_tools](https://github.com/jkk-research/sim_wayp_plan_tools)
 - [github.com/jkk-research/pointcloud_to_grid](https://github.com/jkk-research/pointcloud_to_grid)

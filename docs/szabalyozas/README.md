@@ -29,7 +29,7 @@ Az utolsó pontot szokás ún. **előrecsatolt ágnak** is hívni (lásd 3. alfe
 Egy nagyon durva összehasonlítást tartalmaz az 1. Ábra. Képzeljünk el egy helyzetet, amikor nincs információnk arról, milyen gyorsan megy a jármű, csupán a pedált tudjuk kezelni. A feladat hogy álló helyből gyorsítva elérjük a 90 km/h sebességet, majd ezt a sebességet tartsuk. Ha nem tudjuk, épp mennyivel megyünk, honnan tudjuk, hogy kell-e még nyomni a pedált avagy nem? Ilyenkor arra tudunk alapozni, hogy ismerjük az útviszonyokat (pl. sík talaj, aszfaltos út), ismerjük az autónkat (milyen motor, milyen nyomatékviszonyok...stb.). Így *nagyjából* meg tudjuk határozni, milyen hosszan kell nyomni a gázpedált, majd amikor *nagyjából* elértük a sebességet, mennyire kell ott tartani a pedálon a lábunkat, hogy ne lassuljunk, ne gyorsuljunk. Az eredmény valószínűleg hasonlítani fog a kívánt sebességgörbéhez, de messze nem lesz pontos. Hiszen pontatlanul ismerjük az utat, a saját autónkat, befolyásolja a gyorsulást a hőmérséklet, emelkedő/lejtő, szembeszél...stb. Ezért általában nem, vagy nem csak ezt a **nyílthurkú** megközelítést használjuk, hanem minél pontosabb érzékelők segítségével *korrigáljuk* az általunk előre meghatározott pedál állásokat, és ezzel bármilyen **zavar** hatását le tudjuk kezelni. Ez utóbbi megközelítést nevezzük **zárthurkú szabályzásnak**, az érzékelésből kapott információkat pedig **visszacsatolásnak**.
 
 !!! note 
-A magyar terminológiában szokás a *nyílthurkú szabályzást* **vezérlésnek**, a *zárthurkú szabályzást* röviden csak **szabályzásnak** hívni. A kettőt együtt pedig **irányításnak**. Az angol terminológia ezzel szemben mindkettőt **controlnak**, azon belül is **closed loop controlnak** illetve **open loop controlnak** hívja. A visszacsatolást **feedbacknek**, az előrecsatolást **feed-forwardnak** szokás hívni. 
+    A magyar terminológiában szokás a *nyílthurkú szabályzást* **vezérlésnek**, a *zárthurkú szabályzást* röviden csak **szabályzásnak** hívni. A kettőt együtt pedig **irányításnak**. Az angol terminológia ezzel szemben mindkettőt **controlnak**, azon belül is **closed loop controlnak** illetve **open loop controlnak** hívja. A visszacsatolást **feedbacknek**, az előrecsatolást **feed-forwardnak** szokás hívni. 
 
 ![image info](arj_control_01.png)
 
@@ -231,14 +231,15 @@ Ezen fogalmak összessége elegendő a járműirányítási alapok megértéséh
 - a szabályzás energiája.
 
 A szabályzási láncot a 3. Ábrán látható módon írhatjuk fel. A következő jelöléseket használjuk:
-- $$r(t)$$: a célérték, avagy referenciajel
-- $$y(t)$$: a visszacsatolt érték.
-- $$m(t)$$: a valós rendszeren mért érték. Megjegyzés: sokszor az érzékelőt ideálisnak tekintjük, így $$y(t)=m(t)$$, és így a visszacsatolt érték egyben az absztrakt rendszer kimenete.
-- $$e(t)$$: hibajel, a szabályzó bemenete.
-- $$i(t)$$: a szabályzó által meghatározott beavatkozó jel.
-- $$f(t)$$: előrecsatolt ág.
-- $$u(t)$$: a rendszer bemenete
-- $$d(t)$$: külső zavarok.
+
+- $r(t)$: a célérték, avagy referenciajel
+- $y(t)$: a visszacsatolt érték.
+- $m(t)$: a valós rendszeren mért érték. Megjegyzés: sokszor az érzékelőt ideálisnak tekintjük, így $y(t)=m(t)$, és így a visszacsatolt érték egyben az absztrakt rendszer kimenete.
+- $e(t)$: hibajel, a szabályzó bemenete.
+- $i(t)$: a szabályzó által meghatározott beavatkozó jel.
+- $f(t)$: előrecsatolt ág.
+- $u(t)$: a rendszer bemenete
+- $d(t)$: külső zavarok.
 
 <img src="arj_control_03.svg" width="600" height="260" /> <br>
 *3. Ábra: a szabályzási lánc blokkdiagramja.*
@@ -368,7 +369,7 @@ Ezt kompenzálhatjuk, ha a lejtővel arányos előrecsatolt ágat alkotunk meg. 
 <img src="arj_control_17.png" width="400" height="300" /> <br>
 *17. Ábra: előrecsatolt ág hatása a szabályzóra.*
 
-## Interaktív PID hangolás 
+### 3.4 Interaktív PID hangolás 
 
 A következőkben a egy másik szabályozási példa (hőmérséklet szabályozás) interaktív PID hangolását lehet megtenni:
 
@@ -510,7 +511,8 @@ Ahol:
 
 Ez az egyenlet felírás voltaképp egy minimalizálása a szög hibáknak, hiszen a cél, hogy mindig *irányba* álljunk. A visszacsatolás a környezet érzékelésből jön. A kimenet az út kerék szög.
 
-<img src="arj_control_23.png" width="300" height="80" /> <br>
+<img src="arj_control_23.png" width="300" height="80" />
+
 *24. Ábra: a dual-point irányítási megoldás szemléltetése*
 
 A 25. Ábrán a [8]-ban ismertetett megoldást látjuk. A lényege, hogy több egymásba ágyazott PID szabályzó segítségével a pozíció hibát minimalizálja. Ehhez a szabályzási feladatot szétbontja egy alacsony frekvenciás szabályzásra (pozíció hiba) és egy magasfrekvenciás szabályzásra (kormányszög hiba). Az átviteli függvények egy-egy szabályzót testesítenek meg, sorban a következőket jelentik:
@@ -520,7 +522,8 @@ A 25. Ábrán a [8]-ban ismertetett megoldást látjuk. A lényege, hogy több e
 - $G_NM$: a neuromotoros szabályzás, ahogyan az emberek a kormányt mozgatják. Ennek dinamikája nagyban függ az emberek izomszerkezetétől.
 - $G_{P1}$ és $G_{P2}$: a visszacsatolásba illesztett *érzékelő modellek*. Ezek reprezentálják az ember érzékelési dinamikáját, sorban a kormányon lévő nyomaték és a kormány szög tekintétben.
 
-<img src="arj_control_24.png" width="500" height="300" /> <br>
+<img src="arj_control_24.png" width="500" height="300" />
+
 *26. Ábra: egy teljes zárthurkú szabályzó, egyesítve a kormányszög szabályzással*
 
 ### Összefoglalás

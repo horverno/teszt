@@ -12,14 +12,14 @@ icon: material/math-integral-box # elméleti tananyag
 
 # `ROS 2` alapfoglamak
 
-[ROS verziók és telepítés](https://sze-info.github.io/arj/telepites/)
+[ROS verziók és telepítés](https://sze-info.github.io/ajr/telepites/)
 
 
 
 Az `ROS 2`, a `ROS` legújabb kiadása, olyan szoftverkönyvtárak és eszközök készlete (middleware), amelyek segítenek robotalkalmazások fejlesztésében. Definíció szerint a middleware egy szoftver komponenseket összekötő szoftver. Ez egy olyan réteg, amely az operációs rendszer és az alkalmazások között helyezkedik el az elosztott számítógépes hálózat mindkét oldalán. Az `ROS 2` megengedő, nyílt forráskódú, [Apache 2.0](https://choosealicense.com/licenses/apache-2.0/) licenszelést használ. 
 
 
-<center><img src="ros_overview01.svg" width="60%"/></center>
+<center><img src="../bevezetes/ros_overview01.svg" width="60%"/></center>
 
 
 A `ROS` 2007-es kiadása óta inkrementális frissítéseken esett át, tehát fundamentális változások nem, nagyobb fejlesztések viszont folyamatosan történtek. 2017-ben jött rá a robotikai közösség, hogy olyan alapvető limitációi vannak az eredeti 2007-es elképzelésnek, amit ilyen inkrementális módon sajnos nem lehet javítani. Így végül a Noetic Ninjemis (2025-ig támogatva) az `ROS 1` utolsó kiadása, helyette párhuzamosan elkezdték fejleszteni az `ROS 2`-t. Ez egyben azt is jelenteti, hogy a korábbi forráskódokat nehezebben lehet portolni az új verzióra, cserébe rengeteg újdonságot, javítást, támogatást kaphatunk a fejlesztendő robotok, járművek számára.
@@ -91,6 +91,71 @@ graph LR;
 ```
 
 
+## `ROS 2` mappaszerkezet
+
+
+``` bash
+~/ros2_ws$ ls
+
+build  install  log  src
+```
+
+``` mermaid
+graph TD;
+
+    W1{{ Workspace</br>pl. ros2_ws }}:::light --> S1{{ Source space</br>src }}:::white
+    W1 --> B1{{ Build space</br>build }}:::white
+    W1 --> I1{{ Install space</br>install }}:::white
+    W1 --> L1{{ Log space</br>log }}:::white
+    S1 --> P1{{ package1 }}:::white
+    S1 --> P2{{ package2 }}:::white
+    S1 --> P3{{ bundle_packages }}:::white
+    P1 --> LA1{{ launch }}:::white
+    P1 --> SR1{{ src }}:::white
+    P2 --> LA2{{ launch }}:::white
+    P2 --> SR2{{ src }}:::white
+
+    classDef light fill:#34aec5,stroke:#152742,stroke-width:2px,color:#152742  
+    classDef dark fill:#152742,stroke:#34aec5,stroke-width:2px,color:#34aec5
+    classDef white fill:#ffffff,stroke:#152742,stroke-width:2px,color:#152742
+    classDef red fill:#ef4638,stroke:#152742,stroke-width:2px,color:#fff
+```
+
+``` mermaid
+graph TD;
+
+    W2{{ other_ws }}:::light --> S2{{ src }}:::white
+    W2 --> B2{{ build }}:::white
+    W2 --> I2{{ install }}:::white
+    W2 --> L2{{ log }}:::white
+
+    classDef light fill:#34aec5,stroke:#152742,stroke-width:2px,color:#152742  
+    classDef dark fill:#152742,stroke:#34aec5,stroke-width:2px,color:#34aec5
+    classDef white fill:#ffffff,stroke:#152742,stroke-width:2px,color:#152742
+    classDef red fill:#ef4638,stroke:#152742,stroke-width:2px,color:#fff
+```
+
+``` bash
+~/ros2_ws/
+├──build  
+├──install  
+├──log
+└──src/
+    ├── bundle_packages 
+    │   ├── cone_detection_lidar
+    │   │   ├── launch
+    │   │   └── src
+    │   ├── my_vehicle_bringup
+    │   │   └── launch
+    │   ├── other bundle package1
+    │   ├── other bundle package2
+    │   └── img
+    └── wayp_plan_tools
+        ├── csv
+        ├── launch
+        └── src
+```
+
 ## Különbségek az `ROS 1` és `ROS 2` között 
 
 - *Változások a Middleware-ben*  
@@ -121,7 +186,7 @@ Forrás: [husarnet.com/blog/ros2-docker](https://husarnet.com/blog/ros2-docker)
 
 ## Verziók
 
-[ROS verziók és telepítés](https://sze-info.github.io/arj/telepites/)
+[ROS verziók és telepítés](https://sze-info.github.io/ajr/telepites/)
 
 ![Alt text](ros2distros.svg)
 

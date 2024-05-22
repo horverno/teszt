@@ -20,7 +20,7 @@ A legtöbb robotikai fejlesztő már a robtika hajnalán úgy gondolta, hogy nem
 
 ## Verziók
 
-[ROS verziók és telepítés](https://sze-info.github.io/arj/telepites/)
+[ROS verziók és telepítés](https://sze-info.github.io/ajr/telepites/)
 
 Melodic
 {: .label .label-green }

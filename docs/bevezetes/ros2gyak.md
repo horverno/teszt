@@ -9,7 +9,7 @@ icon: material/code-braces-box # gyakorlati tananyag
 
 ## Emlékeztető
 
-Pár alapfogalom az [előző](https://sze-info.github.io/arj/bevezetes/ros2.html) alkalomról: 
+Pár alapfogalom az [előző](https://sze-info.github.io/ajr/bevezetes/ros2/) alkalomról: 
 
 - **Node**: Gyakorlatilag ROS *program*ot jelent. (pl. `turtlesim_node`, `cmd_gen_node`, `foxglove_bridge`)
 - **Topic** (topik): Nevekkel ellátott kommunikációs csatorna. (pl. `/turtle1/cmd_vel`, `/turtle1/pose`, `/raw_cmd`)
@@ -98,6 +98,7 @@ Első lépésként az `ls ~ | grep ros2` parancs segítségével ellenőrizzük,
 A legfontosabb parancs talán a `colcon build`. Említésre méltó még a `colcon list` és a `colcon graph`. Előbbi listázza az elérhető packageket, utóbbi pedig a függőségekről ad gyors nézetet.
 
 A `colcon build` számos hasznos kapcsolóval érkezik:
+
 - `--packages-select`: Talán az egyik leggyakrabban használt kapcsoló, utána meggadhatunk több package-t, amit buildelni szeretnénk. Ha nincs megadva, akkor az alapértelmezett, hogy a teljes workspace-t buildeli. A gyakorlatban lesz is egy `colcon build --packages-select arj_intro_cpp arj_transforms_cpp` parancs, ez a két arj package-t buildeli.
 - `--symlink-install`: A fájlok forrásból való másolása helyett használjon szimbolikus hivatkozásokat. Így elkerülhető, hogy pl. minden egyes launch fájl módosítás esetén újra kelljen buildelni a package-t.
 - `--parallel-workers 2`: A párhuzamosan feldolgozható feladatok maximális száma, ebben az esetben `2`. Ha nincs megadva, akkor az alapértelmezett érték a logikai CPU magok száma. Akkor érdemes korlátozni, ha a build nem fut végig erőforrás hiány miatt. 
@@ -110,9 +111,37 @@ Mivel a packagek különböző workspace-eken belül egymásra is épülhetnek, 
 - A `setup.bash` szkript viszont a `local_setup.bash` parancsfájlt adja az összes olyan workspace-hez, amely a munkaterület létrehozásakor függőség volt. 
 
 !!! note 
-A tantárgyban nem kell ilyen összetett rendszereket használni, legtöbbször egy `ros2_ws` is elég.
+    A tantárgyban nem kell ilyen összetett rendszereket használni, legtöbbször egy `ros2_ws` is elég.
 
 ## `2.` feladat - Package build és használat
+
+
+<details>
+<summary> Emlékeztetőül a mapparendszer.</summary>
+
+
+``` bash
+~/ros2_ws/
+├──build  
+├──install  
+├──log
+└──src/
+    ├── bundle_packages 
+    │   ├── cone_detection_lidar
+    │   │   ├── launch
+    │   │   └── src
+    │   ├── my_vehicle_bringup
+    │   │   └── launch
+    │   ├── other bundle package1
+    │   ├── other bundle package2
+    │   └── img
+    └── wayp_plan_tools
+        ├── csv
+        ├── launch
+        └── src
+```
+</details>
+
 
 [docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Creating-A-Workspace/Creating-A-Workspace.html](https://docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Creating-A-Workspace/Creating-A-Workspace.html)
 
@@ -215,10 +244,8 @@ void loop()
 }
 ```
 
-!!! important
-> Python megfelelője
->
-> A C++ kód python verziója szintén elérhető a [github.com/sze-info/arj_packages](https://github.com/sze-info/arj_packages/blob/main/arj_intro_py/arj_intro_py/cmd_gen_node.py) címen. Érdemes összehasonlítani a C++ és a python kódokat.
+!!! important "Python megfelelője"
+    A C++ kód python verziója szintén elérhető a [github.com/sze-info/arj_packages](https://github.com/sze-info/arj_packages/blob/main/arj_intro_py/arj_intro_py/cmd_gen_node.py) címen. Érdemes összehasonlítani a C++ és a python kódokat.
 
 Nézzük meg az utolsó terminálban a Foxglove segítségével az élő adatokat (itt se felejtsük a `source`-t):
 
@@ -259,10 +286,8 @@ Vizsgáljuk meg a package tartalmát röviden a `code ~/ros2_ws/src/arj_packages
 A feladat a hivatalos ROS2 dokumentáción alapul: [docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Creating-Your-First-ROS2-Package.html](https://docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Creating-Your-First-ROS2-Package.html). Készítsük el a `my_package` nevű ROS 2 package-t.
 
 
-!!! important
-> Python megfelelője
->
-> Jelenleg C++ package-t készítünk, de az [eredeti](https://docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Creating-Your-First-ROS2-Package.html) tutorial is taralmazza a CMake(c++) package Python megfelelőit.
+!!! important "Python megfelelője"
+    Jelenleg C++ package-t készítünk, de az [eredeti](https://docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Creating-Your-First-ROS2-Package.html) tutorial is taralmazza a CMake(c++) package Python megfelelőit.
 
 Első lépés, hogy a a workspace `src` mappájába lépjünk:
 
@@ -368,9 +393,7 @@ code ~/ros2_ws/src/my_package
 
 
 !!! tip
-
-    note }
-A `code` parancs után fájlt megadva a fájl niytódik meg, míg mappát (könyvtárat) megadva az adott mappa tartalma nyílik meg. Gyakran forul elő, hogy például egy adott package-ben vagyunk és szeretnénk az aktuális mappát megnyitni. Ezt megtehetjük a `code .` paranccsal, amikoris az aktuális mappa nyitódik meg, hiszen a `.` karakter az aktuális mappát jelenti linuxban. 
+    A `code` parancs után fájlt megadva a fájl niytódik meg, míg mappát (könyvtárat) megadva az adott mappa tartalma nyílik meg. Gyakran forul elő, hogy például egy adott package-ben vagyunk és szeretnénk az aktuális mappát megnyitni. Ezt megtehetjük a `code .` paranccsal, amikoris az aktuális mappa nyitódik meg, hiszen a `.` karakter az aktuális mappát jelenti linuxban. 
 
 ## `4.` feladat - C++ publisher / subscriber
 

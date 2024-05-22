@@ -21,8 +21,8 @@ A leírásban alapvető Linux ismeretek találhatók.
 Linuxban (ebben a leírásban értsd  Ubuntu, Raspbian) a legtöbb munkamenetet lehetséges, vagy épp célszerű terminálból végrehajtani.
 Ez a tutorial segít a linux terminál alapjainak megismertetésében.
 
-!!! note 
-Fontos, hogy a megszokott `ctrl`+`v`, `ctrl`+`c` helyett itt a `ctrl`+`shift`+`v`, `ctrl`+`shift`+`c` működik. A `ctr`+`c`(megszakítás billentyűzetről) pl. egy ROS node (program) befejezésére használható itt. 
+!!! danger 
+    Fontos, hogy a megszokott `ctrl`+`v`, `ctrl`+`c` helyett itt a `ctrl`+`shift`+`v`, `ctrl`+`shift`+`c` működik. A `ctr`+`c`(megszakítás billentyűzetről) pl. egy ROS node (program) befejezésére használható itt. 
 
 # Ajánlott terminálprogramok
 
@@ -142,10 +142,8 @@ A megszokott `ctrl`+`v`, `ctrl`+`c` helyett itt a `ctrl`+`shift`+`v`, `ctrl`+`sh
 - `git checkout -- .`: Minden nem staged (unstaged) változás elvetése lokálisan. VS code-ban kb ez a "discard all changes" parancs. (Újabb git verziókban a `git restore .` is hasonló módon működik.)
 - `git merge <branch_name>`: a jelenlegi branch-be mergeli a branch-t
 
-!!! important
-> Tipp
->
-> A legtöbb művelet VS code-dal elvégezhető terminál nélkül is. [Erről bővebben itt lehet olvasni](https://sze-info.github.io/arj/bevezetes/vscode.html).
+!!! tip
+    A legtöbb művelet VS code-dal elvégezhető terminál nélkül is. [Erről bővebben itt lehet olvasni](https://sze-info.github.io/ajr/bevezetes/vscode).
 
 
 <center><img src="https://raw.githubusercontent.com/sze-info/arj/main/docs/_images/gitworkflow01.gif" width="100%" /></center>
@@ -289,9 +287,7 @@ source ~/.bashrc
 #### ROS 1 
 
 !!! tip
-
-    warning }
-A fejezetben a régi ROS 1-es könyzeteti változókról van szó, az új ROS 2-est a következő fejezet tartalmazza. 
+    A fejezetben a régi ROS 1-es könyzeteti változókról van szó, az új ROS 2-est a következő fejezet tartalmazza. 
 
 Kiírathatjuk a környezeti változókat (environment variables) `echo`-val / `printenv`-vel pl:
 
@@ -310,10 +306,8 @@ printenv ROS_IP
 
 #### ROS 2 
 
-!!! important
-> ROS 2 fejezet
->
-> Ez az új, ROS 2-est tartalmazó fejezet. 
+!!! important "ROS 2 fejezet"
+    Ez az új, ROS 2-est tartalmazó fejezet. 
 
 Kiírathatjuk a környezeti változókat (environment variables) `echo`-val / `printenv`-vel pl:
 

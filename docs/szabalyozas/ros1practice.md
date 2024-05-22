@@ -86,7 +86,7 @@ rosparam get /racecar/left_rear_wheel_velocity_controller/pid/
 ```
 
 !!! note 
-Alternatívaként használhatjuk a `rosrun rqt_reconfigure rqt_reconfigure` parancsot is.
+    Alternatívaként használhatjuk a `rosrun rqt_reconfigure rqt_reconfigure` parancsot is.
 
 Futtassuk a következő parancsot a sebesség referencia kiadására:
 ```

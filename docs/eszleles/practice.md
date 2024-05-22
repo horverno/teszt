@@ -99,7 +99,6 @@ MAKEFLAGS="-j4" colcon build --packages-select arj_simple_perception --cmake-arg
 ```
 
 !!! tip
-
     A klasszikus `colcon build --packages-select arj_simple_perception` is működik, csupán egy kicsit lassabb, ezért használjuk most a build flageket.
 
 
