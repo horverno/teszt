@@ -218,7 +218,11 @@ ros2 run arj_intro_cpp cmd_gen_node
 
 A következőképp mozog most a teknős:
 
-<center><img src="turtlesim02.gif" width="80%" /></center>
+<figure markdown="span">
+  ![Image title](turtlesim02.gif){ width="100%" }
+  <figcaption>Turtle</figcaption>
+</figure>
+
 
 Forráskódja elérhető a [github.com/sze-info/arj_packages](https://github.com/sze-info/arj_packages/blob/main/arj_intro_cpp/src/cmd_gen_node.cpp) repon.A lényeg, hogy a `loop` függvény 5 Hz (200 ms) frekvencián fut le, és 
 
