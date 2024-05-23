@@ -18,8 +18,10 @@ icon: material/math-integral-box # elméleti tananyag
 
 Az `ROS 2`, a `ROS` legújabb kiadása, olyan szoftverkönyvtárak és eszközök készlete (middleware), amelyek segítenek robotalkalmazások fejlesztésében. Definíció szerint a middleware egy szoftver komponenseket összekötő szoftver. Ez egy olyan réteg, amely az operációs rendszer és az alkalmazások között helyezkedik el az elosztott számítógépes hálózat mindkét oldalán. Az `ROS 2` megengedő, nyílt forráskódú, [Apache 2.0](https://choosealicense.com/licenses/apache-2.0/) licenszelést használ. 
 
-
-<center><img src="../bevezetes/ros_overview01.svg" width="60%"/></center>
+<figure markdown="span">
+  [![Image title](/bevezetes/ros_overview01.svg){ width="100%" }](/bevezetes/ros_overview01.svg)
+  <figcaption>ROS 2 áttekintés</figcaption>
+</figure>
 
 
 A `ROS` 2007-es kiadása óta inkrementális frissítéseken esett át, tehát fundamentális változások nem, nagyobb fejlesztések viszont folyamatosan történtek. 2017-ben jött rá a robotikai közösség, hogy olyan alapvető limitációi vannak az eredeti 2007-es elképzelésnek, amit ilyen inkrementális módon sajnos nem lehet javítani. Így végül a Noetic Ninjemis (2025-ig támogatva) az `ROS 1` utolsó kiadása, helyette párhuzamosan elkezdték fejleszteni az `ROS 2`-t. Ez egyben azt is jelenteti, hogy a korábbi forráskódokat nehezebben lehet portolni az új verzióra, cserébe rengeteg újdonságot, javítást, támogatást kaphatunk a fejlesztendő robotok, járművek számára.
@@ -204,7 +206,7 @@ További release-ek: [docs.ros.org/en/humble/Releases.html](https://docs.ros.org
 
 ## Nodes 
 
-A node legegyszerűbben fogalmazva ROS programot (magyarosítva csomópont) jelent. Ábrán kerek ⚪ jelöléssel feltünteve. Jellemzőik:
+A node legegyszerűbben fogalmazva ROS programot (magyarosítva csomópont) jelent. Ábrán kerek 🔴 jelöléssel feltünteve. Jellemzőik:
 
 - "Végrehajthatóak" (c++ / py).
 - Minden node egy folyamat
@@ -215,7 +217,7 @@ A node legegyszerűbben fogalmazva ROS programot (magyarosítva csomópont) jele
 
 ## Topics
 
-A topic-ok felfoghatóak egy nevesített "portnak", ahol a node-ok kommunkálni tudnak. Ábrán szögletes ⬜ jelöléssel feltünteve. Jellemzőik:
+A topic-ok felfoghatóak egy nevesített "portnak", ahol a node-ok kommunkálni tudnak. Ábrán szögletes 🟦 jelöléssel feltünteve. Jellemzőik:
 
 - A node-ok közötti információ áramlásért felel.
 - Minden topic típusát az "üzenet" határozza meg

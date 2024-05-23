@@ -116,12 +116,18 @@ cd ~/ros2_ws/src/my_awesome_package
 git status
 ``` 
 
+<figure markdown="span">
+  ![Image title](/onallo/git_status01.png){ width="100%" }
+  <figcaption>Git status</figcaption>
+</figure>
 
-<img src="/onallo/git_status01.png" width="100%" />
 
 Ugyanez VS code-ban így néz ki:
 
-<img src="/onallo/git_status02.png" width="100%" />
+<figure markdown="span">
+  ![Image title](/onallo/git_status02.png){ width="100%" }
+  <figcaption>Git status VS code</figcaption>
+</figure>
 
 # Távoli repo frissítése `git push` segítségével
 
@@ -144,18 +150,27 @@ git push
 ```
 
 
-<img src="/onallo/git_status03.png" width="100%" />
+<figure markdown="span">
+  ![Image title](/onallo/git_status03.png){ width="100%" }
+  <figcaption>Git status add után</figcaption>
+</figure>
 
 VS code-ban ez is egyszerűbb, __Commit__, majd __Sync Changes__:
 
-<img src="/onallo/git_push01.png" width="80%" />
+<figure markdown="span">
+  ![Image title](git_push01.png){ width="100%" }
+  <figcaption>Git status Sync (push)</figcaption>
+</figure>
 
 
 # Lokális repo frissítése `git pull` segítségével
 
 Abban az esetben, ha nem a legfrissebb verzió lenne lokálisan, a github-on online tárolt remote lefrissítehető:
 
-<img src="/onallo/git_pull01.png" width="100%" />
+<figure markdown="span">
+  ![Image title](git_pull01.png){ width="100%" }
+  <figcaption>Git status (pull)</figcaption>
+</figure>
 
 
 # Források

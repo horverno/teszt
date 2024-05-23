@@ -1,14 +1,13 @@
 ---
-layout: default
+# icon: material/code-braces-box # gyakorlati tananyag
 title: Gyakorlat - Kálmán filter
-icon: material/code-braces-box # gyakorlati tananyag
 ---
 
 # Gyakorlat
 
 
 
-[GitHub Link](https://github.com/sze-info/Lecture_ADSE/blob/master/02_basics_of_mapping_and_localization/practice/practice_Kalman-Filter-IMU%2BGPS_short.ipynb){: .btn .btn-blue }
+[GitHub :material-github: link](https://github.com/sze-info/Lecture_ADSE/blob/master/02_basics_of_mapping_and_localization/practice/practice_Kalman-Filter-IMU%2BGPS_short.ipynb){: .md-button}
 
 
 

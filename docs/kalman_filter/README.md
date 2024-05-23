@@ -1,7 +1,5 @@
 ---
-layout: default
-title: Kálmán filter
-has_children: true
+title: Elmélet - Kálmán filter
 permalink: /kalman_filter/
 ---
 

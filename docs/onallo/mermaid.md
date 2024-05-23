@@ -16,16 +16,25 @@ A mermaid hasznos kiegészője lehet a markdown fájlainknak (pl `README.md`). K
 ## VS code extension
 
 Bal oldalt az Extension ikonra kattintva vagy a `Ctrl` + `Shift` + `X` után a meraid kulcsszót beírva előjön a Markdown Preview kiegészítő, ez egy katintással telepíthető és használhat is. Ezután a Markdown előnézetében (`Ctrl` + `Shift` + `V` vagy felső ikon) már látható is lesz az előlnézet. 
-<center>
-<img src="../assets/images/mermaid01.png" width="60%" />
-<img src="../onallo/mermaid02.png" width="90%" />
-</center>
+
+
+<figure markdown="span">
+  ![Image title](/assets/images/mermaid01.png){ width="80%" }
+  <figcaption>Mermaid, VS code extension</figcaption>
+</figure>
+
+<figure markdown="span">
+  ![Image title](mermaid02.png){ width="90%" }
+  <figcaption>Mermaid, VS code</figcaption>
+</figure>
 
 Célszerű a *Mermaid Markdown Syntax Highlighting* és a *Color Highlight* extension-t is használni, ekkor a következőképp jelenik meg a gráf kódja:
 
-<center>
-<img src="../onallo/mermaid03.png" width="90%" />
-</center>
+<figure markdown="span">
+  ![Image title](/onallo/mermaid03.png){ width="90%" }
+  <figcaption>Mermaid, VS code highlight</figcaption>
+</figure>
+
 
 # Példák
 

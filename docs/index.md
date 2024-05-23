@@ -67,24 +67,24 @@ Oktatók | | | .
 1| szept. 6. | [Bevezetés](https://sze-info.github.io/ajr/bevezetes/practice/) + [Linux](https://sze-info.github.io/ajr/bevezetes/linux/) + [Géptermi ismeretek](https://sze-info.github.io/ajr/bevezetes/gepterem/): WSL2 használata Windows operációs rendszeren. Géptermi alapismeretek. Linux parancsok, amelyek szükségesek lehetnek a későbbiekben.
 2| szept. 13. | [Telepítés](https://sze-info.github.io/ajr/telepites/ros_humble/)+ [Fejlesztőkörnyezet beállítása](https://sze-info.github.io/ajr/bevezetes/vscode/) + [ROS2 kommunikáció](https://sze-info.github.io/ajr/bevezetes/ros2gyak/): Első `ROS 2` node-ok, ROS parancsok használata, build és source.
 3| szept. 20. | [Érzékelés gyakorlat](https://sze-info.github.io/ajr/erzekeles/practice/): Szenzor adatok jellemzőbb formátumai: `sensor_msgs/PointCloud2`, `sensor_msgs/Image`, `geometry_msgs/Pose`, stb. Bag `.mcap` fájlok kezelése, lejátszása. Egyszerű pacakge készítése, amely pozíció adatokra iratkozik fel. 
-4| szept. 27. | [Verziókezelés, Git](https://sze-info.github.io/arj/onallo/ros2git.html), [Copilot](https://sze-info.github.io/ajr/bevezetes/copilot/), [vs code](https://sze-info.github.io/ajr/bevezetes/vscode/), [ROS 2 launch](https://sze-info.github.io/ajr/ros2halado/ros2launch/): Copilot használata ROS 2 fejlesztéshez, Template repo ismertetése, használata, launch fájlok írása python nyelven
-5| okt. 4. | [Transzformációk gyakorlat](https://sze-info.github.io/arj/transzformaciok/practice.html): Node létrehozása, amely transzformációkat hirdet. Markerek megjelenítése, launch önálló feladat.
-6| okt. 11. | [Észlelés gyakorlat](https://sze-info.github.io/arj/eszleles/practice.html): egyszerű LIDAR szűrés, X, Y és Z koordináták szerint.
-7| okt. 25. | [Szimuláció bevezetés](https://sze-info.github.io/arj/szimulacio/gazebo_fortress.html): Gazebo Fortress és ROS 2, [szimuláció gyakorlat](https://sze-info.github.io/arj/szimulacio/gyakorlat.html): saját robotszimuláció létrehozása.
-8| nov. 8. | [Tervezés gyakorlat](https://sze-info.github.io/arj/tervezes/practice.html): Polinom alapú lokális tervező megvalósításás. [Nav2](https://navigation.ros.org/) használata szimulátorral.
-9| nov. 15. | [Szabályozás gyakorlat](https://sze-info.github.io/arj/szabalyozas/ros2practice.html): PID hangolás. Trajektóriakövetés Gazebo szimulátorral. Saját fejlesztésű szabályzó és jármű modell.
-10| nov. 22. | [Mesterséges intelligencia gyakorlat](https://sze-info.github.io/arj/mesterseges_intelligencia/practice.html): Neurális hálózatok gyakrolat.
+4| szept. 27. | [Verziókezelés, Git](https://sze-info.github.io/ajr/onallo/ros2git/), [Copilot](https://sze-info.github.io/ajr/bevezetes/copilot/), [vs code](https://sze-info.github.io/ajr/bevezetes/vscode/), [ROS 2 launch](https://sze-info.github.io/ajr/ros2halado/ros2launch/): Copilot használata ROS 2 fejlesztéshez, Template repo ismertetése, használata, launch fájlok írása python nyelven
+5| okt. 4. | [Transzformációk gyakorlat](https://sze-info.github.io/ajr/transzformaciok/practice/): Node létrehozása, amely transzformációkat hirdet. Markerek megjelenítése, launch önálló feladat.
+6| okt. 11. | [Észlelés gyakorlat](https://sze-info.github.io/ajr/eszleles/practice/): egyszerű LIDAR szűrés, X, Y és Z koordináták szerint.
+7| okt. 25. | [Szimuláció bevezetés](https://sze-info.github.io/ajr/szimulacio/gazebo_fortress/): Gazebo Fortress és ROS 2, [szimuláció gyakorlat](https://sze-info.github.io/ajr/szimulacio/gyakorlat/): saját robotszimuláció létrehozása.
+8| nov. 8. | [Tervezés gyakorlat](https://sze-info.github.io/ajr/tervezes/practice/): Polinom alapú lokális tervező megvalósításás. [Nav2](https://navigation.ros.org/) használata szimulátorral.
+9| nov. 15. | [Szabályozás gyakorlat](https://sze-info.github.io/ajr/szabalyozas/ros2practice/): PID hangolás. Trajektóriakövetés Gazebo szimulátorral. Saját fejlesztésű szabályzó és jármű modell.
+10| nov. 22. | [Mesterséges intelligencia gyakorlat](https://sze-info.github.io/ajr/mesterseges_intelligencia/practice/): Neurális hálózatok gyakrolat.
 
 
 
 ## Érdemjegy
 
 - **Aláírás**: Kis beadandó teljesítése (egyszerű otthoni programozási feladat)
-- **1 (elégtelen)**: ZH átlag 0% felett
-- **2 (elégséges)**: ZH átlag 60% felett
-- **3 (közepes)**: ZH átlag 85% felett
-- **4 (jó)**: Nagy féléves beadandó a [megadott irányelvek](https://sze-info.github.io/arj/feleves_beadando/) mentén, nagyobb hibákkal teljesítve
-- **5 (jeles)**: Nagy féléves beadandó a [megadott irányelvek](https://sze-info.github.io/arj/feleves_beadando/) mentén, csak néhány kisebb hibával teljesítve
+- **1 (elégtelen)**: $0\% \leq ZH_{átlag} < 60\%$
+- **2 (elégséges)**: $60\% \leq ZH_{átlag} < 85\%$
+- **3 (közepes)**: $85\% \leq  ZH_{átlag} \leq 100\%$  
+- **4 (jó)**: Nagy féléves beadandó a [megadott irányelvek](https://sze-info.github.io/ajr/feleves_beadando/) mentén, nagyobb hibákkal teljesítve
+- **5 (jeles)**: Nagy féléves beadandó a [megadott irányelvek](https://sze-info.github.io/ajr/feleves_beadando/) mentén, csak néhány kisebb hibával teljesítve
 
 
 ## Konvenciók

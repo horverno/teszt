@@ -24,11 +24,11 @@ Ez a tutorial segít a linux terminál alapjainak megismertetésében.
 !!! danger 
     Fontos, hogy a megszokott `ctrl`+`v`, `ctrl`+`c` helyett itt a `ctrl`+`shift`+`v`, `ctrl`+`shift`+`c` működik. A `ctr`+`c`(megszakítás billentyűzetről) pl. egy ROS node (program) befejezésére használható itt. 
 
-# Ajánlott terminálprogramok
+## Ajánlott terminálprogramok
 
 Számos program választható a szöveges parancssor elérésére. ROS/ROS2 esetén talán a következők a legjobb választások.
 
-## Windows Terminal
+### Windows Terminal
 
 Ahogy a neve is mutatja, ez a megoldás WSL esetén, Windows-on releváns. Előnye, hogy egy helyen használhatunk több Linux disztribúciót akár Windows parancssorral is. `Ctrl-Shift-P` billentyű kombinációkkal, majd a Split down, Split left parancsokkal oszhatjuk szét hasonló módon a terminált:
 
@@ -36,7 +36,7 @@ Ahogy a neve is mutatja, ez a megoldás WSL esetén, Windows-on releváns. Előn
 
 A [Windows Terminal release](https://github.com/microsoft/terminal/releases) oldalon letölthető telepítőként vagy zip formátumban portable verzióban. A portable használathoz kitömörítés után egy üres `.portable` fájlt kell elhelyeznünk. Így akár USB pendriveon is a megszokott beállításokkal használhatjuk. Egy ilyen portable verzió található a géptermekben a `K:\` meghajtón is (`\\fs-kab.eik.sze.hu\C100\kozos\GKNB_AUTM078_Autonóm_robotok_és_járművek_programozása`)
 
-## Terminator
+### Terminator
 
 Linuxon értelmezett terminál, de telepíteni kell.
 
@@ -50,7 +50,7 @@ Terminator-ban `Ctrl-Shift-O`, `Ctrl-Shift-E` billentyű kombinációkkal osztha
 ![Alt text](terminator01.png)
 
 
-## VS code terminal
+### VS code terminal
 
 A fejlesztőkörnyezet beépített terminálja, mind Windowson, mind Linuxon működik.
 
@@ -58,8 +58,8 @@ A fejlesztőkörnyezet beépített terminálja, mind Windowson, mind Linuxon mű
 
 ![](https://code.visualstudio.com/assets/updates/1_54/local-terminal-reconnection.gif)
 
-# Fontosabb terminal parancsok
-## Korábbi parancsok
+## Fontosabb terminal parancsok
+### Korábbi parancsok
 
 
 - `Fel nyíl🔼` vagy `Le nyíl🔽` - A közvetlenül ezelőtti parancsokat érhetjük el így.
@@ -70,18 +70,19 @@ A megszokott `ctrl`+`v`, `ctrl`+`c` helyett itt a `ctrl`+`shift`+`v`, `ctrl`+`sh
 
 ![Alt text](linux_recent01.gif)
 
-## Automatikus kiegészítés
+### Automatikus kiegészítés
 
 - `Tab` billenytűvel az elkezdett parancsok egészíthetőek ki
 - `Tab Tab` billenytűkombinációval az összes lehetséges parancsot fogja kilistázni
 
 ![](https://sze-info.github.io/arj/erzekeles/terminalintro01.gif)
 
-## Képrnyőtörlés
+### Képrnyőtörlés
 
 - `Ctrl+L` billenytűvel törölhetőek a korábbi szövegek, így jobban átlátható lesz a terminal
 
-## Könyvtárak közötti navigáció
+### Könyvtárak közötti navigáció
+
 - `cd`: adott könyvtárba / mappába történő belépés
   - pl `cd ~/ros2_ws/src`, `cd ../..`
 - `ls`: listázás: könyvtárak, fájlok
@@ -95,7 +96,7 @@ A megszokott `ctrl`+`v`, `ctrl`+`c` helyett itt a `ctrl`+`shift`+`v`, `ctrl`+`sh
   - pl `chmod +x my_python_node.py`: végrehajtási (execute) jog hozzáadása
   - pl `chmod 777 everything.py`: minden jog hozzáadása
 
-### `chmod`
+#### `chmod`
 
 |N|Sum|`rwx`|Permission|
 |-|---|-----|----------|
@@ -108,7 +109,7 @@ A megszokott `ctrl`+`v`, `ctrl`+`c` helyett itt a `ctrl`+`shift`+`v`, `ctrl`+`sh
 |`1`	|1(x)|`--x`	|execute only|
 |`0`	|0   |`---`	|none|
 
-### Könyvtárak
+#### Könyvtárak
 
 | Hely  |  Magyarázat |
 |-------|---|
@@ -127,7 +128,7 @@ A megszokott `ctrl`+`v`, `ctrl`+`c` helyett itt a `ctrl`+`shift`+`v`, `ctrl`+`sh
 |`/usr` |  Universal system resources, alkalmazások, rendszereszközök |
 |`/var` |  Változó adatok, például nyomtatási munkák, email-ek |
 
-## Verziókezelés
+### Verziókezelés
 - `git clone`: git repo klónozása
 - `git config --global user.name "Sanyika"`: felhsználónév beállítása
 - `git config --global user.email "sanyika@gggmail.com`: email beállítása
@@ -151,7 +152,7 @@ A megszokott `ctrl`+`v`, `ctrl`+`c` helyett itt a `ctrl`+`shift`+`v`, `ctrl`+`sh
 *Forrás*: [link](https://www.linkedin.com/posts/chaima-haj-taher-1093881ba_git-softwaredevelopment-workflow-activity-7177685446787751936-atW_)
 
 
-## Szöveges fájlok
+### Szöveges fájlok
 - `wget`: webes tartalmak letöltése terminalból
 - `cat`: fájl tartalmának kiíratása
 - `touch`: szöveges fájl létrehozása
@@ -169,7 +170,7 @@ A megszokott `ctrl`+`v`, `ctrl`+`c` helyett itt a `ctrl`+`shift`+`v`, `ctrl`+`sh
 - `colcon`: wrapper a `cmake` és `make` parancsok egyszerűbb használatához, erről bővebben később
 
 
-## Telepítés
+### Telepítés
 - `sudo apt install` vagy `sudo apt-get install`: szoftver csomagkezelővel történő telepítés, Advanced Packaging Tool (APT). 
   - pl. `sudo apt install tree mc` - tree és mc programok telepítése 
 - `sudo`: (Superuser do) Lehetővé teszi, hogy rendszergazdaként vagy más felhasználó nevében hajtsunk végre parancsokat.
@@ -178,29 +179,29 @@ A megszokott `ctrl`+`v`, `ctrl`+`c` helyett itt a `ctrl`+`shift`+`v`, `ctrl`+`sh
 - `apt list`: listázza asz összes telepített csomagot
   - pl. `apt list | grep ros`: leszűri csak az `ROS`-hez kapcsolódó csomagokat
 
-## További hasznos eszközök
+### További hasznos eszközök
 
-### Navigáció
+#### Navigáció
 - `Ctrl + a` vagy `home`: A sor elejére dob
 - `Ctrl + e` vagy `end`: A sor végére dob
 - `Ctrl + ◀` / `Ctrl + ▶`: Az előző / következő szóra ugrik
-### `grep`
+#### `grep`
 - `grep`: (Global \ Regular Expression \ Print) fájlokban illetve parancsok kimenetében keres
   - pl. `grep 'ROS' ~/.bashrc`: listázza a `bashrc` fájlban az `ROS` szöveget tartalmazó sorokat
   - pl. `rostopic list | grep pose`: listázza az összes topicot, amiben van `pose` string
-### `ssh`
+#### `ssh`
 - `ssh`: (Secure Shell Protocol) linux gépektbe távoli terminal bejelentkezést tesz lehetővé
   - pl. `ssh nvidia@192.168.1.5`: belépés az adott user adott IP címen lévő gépébe
   - pl. `ssh user01@computer4 -X`: belépés `-X` X window használatával, így az esetleges ablakok a mi gépünkön jelennek meg, de a távoli gép hostolja őket
   - pl. `ssh laptop@192.168.0.2 touch hello.txt`: létrehoz az adott gépen egy fájlt, nyilván más parancsokkal is működik
-### Gyakran használt parancsok
+#### Gyakran használt parancsok
 - Futó folyamatokról a `ps` ad tájékoztatást pl: `ps -A | grep ros` vagy `ps -eo pid,cmd | grep ros2`
 - A fájlrendszer állapotáról a `df -h` (disk filesystem, human readable) parancs ad tájékoztatást
 ![](df01.png)
 
 Az `ssh` alapvetően jelszót is kér, de ha megbízunk egy adott gépben, elmenthetjük a privát-publikus kulcspárt, és akkor erre nincs szükség, [például így](https://github.com/szenergy/szenergy-public-resources/wiki/H-SSH-no-password).
 
-### `rsync` hálózati másolás
+#### `rsync` hálózati másolás
 
 Hálózatba kötött gépek közötti másolás (remote sync), pl. egy Nvidia Jetson beágyazott számítógépről a saját gépünk `/mnt/c/bag/` mappájába történő másolás progress-barral így néz ki:
 
@@ -211,7 +212,7 @@ rsync -avzh --progress /mnt/kozos/measurement_files/lexus-2023-07-18-campus.mcap
 rsync -avzh --progress nvidia@192.168.1.5:/mnt/storage_1tb/2023-07-02/ /mnt/c/bag/2023-07-02/
 ```
 
-### `scp` hálózati másolás
+#### `scp` hálózati másolás
 
 Hálózatba kötött gépek közötti másolás (az `rsync` alternatívája). A progress-bar sajnos nem minden rendszeren jelenik meg:
 
@@ -220,7 +221,7 @@ scp /mnt/kozos/measurement_files/lexus3sample02.mcap  /mnt/c/temp/
 ```
 
 
-### `screen`
+#### `screen`
 
 Virtuális terminálokat indít, kezel, például:
 ``` r
@@ -235,31 +236,31 @@ screen -m -d -S rviz1 bash -c 'rosrun rviz rviz'
 - kill: `killall -9 screen` and `screen -wipe`
 
 
-### `mc` fájlkezelő
+#### `mc` fájlkezelő
 
 GNU Midnight Commander (`mc`), a Norton Commander inspirálta fájlkezelő:
 
 ![](mc01.png)
 
-### `nmtui`
+#### `nmtui`
 
 Az `nmtui` (Network Manager Text User Interface) terminal-alapú Wifi / Ethernet / Hálózat konfigurátor.
 
 <img src="https://user-images.githubusercontent.com/11504709/160778891-0c06e338-405f-43c6-8aac-928af33c057e.png" width="50%" />
 
-### `nano` szövegszerkesztő
+#### `nano` szövegszerkesztő
 Terminal alapú szövegszerkesztő. Szerkesztés után `Ctrl+X` a kilépés, utána `Y`-t ütve menti a fájlt.
 
 ![](nano01.png)
 
 
-### `htop` / `top`
+#### `htop` / `top`
 
 Az htop egy interaktív folyamatfigyelő parancs (nagyjából a windows task manager funkcionalitása), amely megjeleníti és felügyeli a futó folyamatokat a rendszeren. Memória- és CPU-használat folymatonként részletezve is kilvasható, továbbá van lehetőség a `kill` használatára is.
 
 ![](htop01.png)
 
-### `~/.bashrc` fájl
+#### `~/.bashrc` fájl
 
 A `bashrc` fájl (a `~` jelentése, hogy `user1` felhasználó esetén a `/home/user1/` mappában található, a `.` jelentése pedig, hogy rejtett fájl) minden terminal indtáskor lefutó fájl. Tehát, ha pl egy parancsot írunk bele, ami `echo "hello"` akkor minden terminal indításkor kiír egy hello üzenetet. Szerkesztése `nano`/`VS code` szövegszerkesztőből:
 
@@ -284,7 +285,7 @@ A `bashrc` fájl módosítása után nem kell új terminált nyitni, ha kiadjuk 
 source ~/.bashrc
 ```
 
-#### ROS 1 
+##### ROS 1 
 
 !!! tip
     A fejezetben a régi ROS 1-es könyzeteti változókról van szó, az új ROS 2-est a következő fejezet tartalmazza. 
@@ -304,7 +305,7 @@ printenv ROS_IP
 192.168.1.10
 ```
 
-#### ROS 2 
+##### ROS 2 
 
 !!! important "ROS 2 fejezet"
     Ez az új, ROS 2-est tartalmazó fejezet. 
@@ -332,7 +333,7 @@ ROS_PYTHON_VERSION=3
 ROS_DISTRO=humble
 ```
 
-#### Gazebo és WSL 
+##### Gazebo és WSL 
 
 Gazebo szimulátort és WSL-t használva előfordulhat egy [issue](https://github.com/gazebosim/gz-sim/issues/1841), ami egy egyszerű környezeti változó beállításával javítható. A `~/.bashrc` fájlban a következőt kell beállítani.
 
@@ -342,7 +343,7 @@ export LIBGL_ALWAYS_SOFTWARE=1 ### GAZEBO IGNITION
 
 Új terminál vagy `source` után a `echo $LIBGL_ALWAYS_SOFTWARE` parancsra `1`-et fog kiíni.
 
-### Branch megjelenítése Linux bash-ben
+#### Branch megjelenítése Linux bash-ben
 *Opcionális, de hasznos lehet*: Keressük meg és módosítsuk a `~/.bashrc` fájlban a következő részt. 
 
 *(VS code használatával a következő parancs: `code ~/.bashrc`)*

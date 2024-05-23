@@ -7,10 +7,8 @@ icon: material/code-braces-box # gyakorlati tananyag
 
 A következő gyakorlat a transzformációk ROS2-ben történő kezelését szemlélteti, C++-ban.
 
-!!! important
-> Python megfelelője
->
-> A C++ kód python verziója szintén elérhető a [github.com/sze-info/arj_packages](https://github.com/sze-info/arj_packages/tree/main/arj_transforms_py) címen. Érdemes összehasonlítani a C++ és a python kódokat.
+!!! danger "Python megfelelője"
+    A C++ kód python verziója szintén elérhető a [github.com/sze-info/arj_packages](https://github.com/sze-info/arj_packages/tree/main/arj_transforms_py) címen. Érdemes összehasonlítani a C++ és a python kódokat.
 
 Frissítsük a legújabb verzióra az `arj_packages` repo-t. Ha frissül, vagy `Already up to date.` üzenetet kapunk, akkor nem kell klónoznunk. Ha a `cd ~/ros2_ws/src/arj_packages` parancs után a `~/ros2_ws/src/arj_packages: No such file or directory` üzenetetet kaptuk, akkor klónozzuk a repo-t.
 
@@ -328,13 +326,13 @@ def generate_launch_description():
 
 # További 
 
-[Python notebook transform](https://nbviewer.org/github/horverno/sze-academic-python/blob/master/eload/ealeshtranszformaciok.ipynb){: .btn .btn-blue .mr-4 }
+[Python notebook transform](https://nbviewer.org/github/horverno/sze-academic-python/blob/master/eload/ealeshtranszformaciok.ipynb){: .md-button .md-button-blue .mr-4 }
 
 
-[Python notebook quaternion](https://github.com/sze-info/arj/blob/main/docs/transzformaciok/gps_utm.ipynb){: .btn .btn-purple .mr-4 }
+[Python notebook quaternion](https://github.com/sze-info/arj/blob/main/docs/transzformaciok/gps_utm.ipynb){: .md-button .md-button-purple .mr-4 }
 
 
-[gps_utm.ipynb](https://github.com/sze-info/arj/blob/main/docs/transzformaciok/quaternion.ipynb){: .btn .btn-purple .mr-4 } 
+[gps_utm.ipynb](https://github.com/sze-info/arj/blob/main/docs/transzformaciok/quaternion.ipynb){: .md-button .md-button-purple .mr-4 } 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/kYB8IZa5AuE?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 

@@ -66,7 +66,9 @@ Telepítve van, az asztalon található ikonnal indítható. Ha mégse lenne tel
 
 ## Géptermi beállítások gyors ellenőrzése
 
-```
-cd /mnt/kozos/script/
-./check_all.sh
-```
+!!! success "Ellenőrzés"
+    A következő parancsokat futtasd le a géptermi terminálban:
+    ``` r
+    cd /mnt/kozos/script/
+    ./check_all.sh
+    ```

@@ -4,16 +4,12 @@ title: Gyakorlat - Érzékelés
 icon: material/code-braces-box # gyakorlati tananyag
 ---
 
- 
-
-
-
-
 # Gyakorlat
 
 A gyakorlat Ubuntu 22.04 `ROS humble`, Windows 10/11 WSL `humble` mellett működik. A különböző verziók telepítésének leírása [itt található](https://sze-info.github.io/ajr/telepites/).
 
-Otthoni gépen a gyakorlat előtt érdemes ellenőrizni, hogy a megfelelő `ROS 2` szoftvercsomagok telepítve vannak-e.
+!!! success "Előzetes ellenőrzés"
+    Otthoni gépen a gyakorlat előtt érdemes ellenőrizni, hogy a megfelelő `ROS 2` szoftvercsomagok telepítve vannak-e.
 
 ``` r
 sudo apt install ros-humble-rosbag2 ros-humble-rosbag2-storage-mcap
@@ -26,7 +22,7 @@ cd /mnt/kozos/script
 ./check_all.sh
 ```
 
-# Előkészületek
+## Előkészületek
 
 Az előző gyakorlaton megismerkedtünk a következő rosbag-gel (ROS 2-ben a formátum már `.mcap`):
 
@@ -62,7 +58,9 @@ Otthon a következő linkről (zöld gomb), vagy parancsként `wget`-el lehet le
 wget  -O lexus3sample02.mcap https://laesze-my.sharepoint.com/:u:/g/personal/herno_o365_sze_hu/EakTOhcjblNInqjRMfaGVmsB0diDv0SWpXw9rwo0MD7f3w?download=1
 ```
 
-[Rosbag letöltése 300 MB](https://laesze-my.sharepoint.com/:u:/g/personal/herno_o365_sze_hu/EakTOhcjblNInqjRMfaGVmsB0diDv0SWpXw9rwo0MD7f3w?download=1){: .btn .btn-green .mr-4 } 
+[MCAP letöltése :material-download: 553 MB](https://laesze-my.sharepoint.com/:u:/g/personal/herno_o365_sze_hu/Eclwzn42FS9GunGay5LPq-EBA6U1dZseBFNDrr6P0MwB2w?download=1){ .md-button }
+
+[MCAP sample letöltése :material-download: 300 MB](https://laesze-my.sharepoint.com/:u:/g/personal/herno_o365_sze_hu/EakTOhcjblNInqjRMfaGVmsB0diDv0SWpXw9rwo0MD7f3w?download=1){: .md-button } 
 
 Listázzuk a **megfelelő** átmásolt `.mcap` fájl alap információit, hasonlóan:  
 
@@ -141,7 +139,7 @@ average rate: 20.133
 
 Az `ROS` idő kezelésre a Unix-időt, vagy a POSIX-időt használja. Ez a UTC (greenwichi idő) szerinti 1970. január 1. 00:00:00 óta eltelt másodpercek és nanoszekundumok számát jelenti (`int32 sec`, `int32 nsec`). Ez egyrészt relatív kis helyet foglal a memóriában, másrészt könnyen számolható két időpont között eltelt idő, mégpedig egy egyszerű kivonással. 
 
-[ros2time.ipynb](https://github.com/sze-info/arj/blob/main/docs/erzekeles/ros2time.ipynb){: .btn .btn-purple .mr-4 } 
+[ros2time.ipynb](https://github.com/sze-info/arj/blob/main/docs/erzekeles/ros2time.ipynb){: .md-button .md-button-purple .mr-4 } 
 
 Hátránya, hogy nem túl intuitív, nem olvasható az ember számára. Pl. a Foxglove Studio ezért is gyakran átalakítja olvashatóbb formátumra. 
 
@@ -500,7 +498,8 @@ ament_package()
 
 ## Build és futtatás
 
-Már buildelhető a package:
+!!! success 
+    Már buildelhető a package:
 
 ``` r 
 cd ~/ros2_ws/

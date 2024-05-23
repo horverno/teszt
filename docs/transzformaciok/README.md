@@ -106,9 +106,9 @@ A 3D  transzformáció (de természetesen a 2D is) egy mátrix segítségével, 
 Forrás: [Robotic Systems, University of Illinois](http://motion.cs.illinois.edu/RoboticSystems/CoordinateTransformations.html)
 
 
-[matrixmultiplication.xyz](http://matrixmultiplication.xyz/){: .btn .btn-blue .mr-4 }
+[matrixmultiplication.xyz](http://matrixmultiplication.xyz/){: .md-button .md-button-blue .mr-4 }
 
-[Python notebook](https://nbviewer.org/github/horverno/sze-academic-python/blob/master/eload/ealeshtranszformaciok.ipynb){: .btn .btn-blue .mr-4 }
+[Python notebook](https://nbviewer.org/github/horverno/sze-academic-python/blob/master/eload/ealeshtranszformaciok.ipynb){: .md-button .md-button-blue .mr-4 }
 
 
 

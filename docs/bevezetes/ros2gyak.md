@@ -151,7 +151,9 @@ Nyissunk négy terminált. Az első terminálból most is indítsuk a beépítet
 ros2 run turtlesim turtlesim_node
 ```
 
-A második terminálban ellenőrizzük a `ros2_ws/src` tartalmát, és **ha szükséges** klónozzuk, majd buildeljük a példa package-t.
+!!! success 
+    A második terminálban ellenőrizzük a `ros2_ws/src` tartalmát, és **ha szükséges** klónozzuk, majd buildeljük a példa package-t.
+
 
 ``` r
 ls ~/ros2_ws/src | grep arj_
