@@ -5,10 +5,6 @@ parent: Önálló feladatok
 ---
 
  
-
-
-
-
 # Mermaid gyakorlás
 
 A mermaid hasznos kiegészője lehet a markdown fájlainknak (pl `README.md`). Különböző grafikononokat, flowchartokat tudunk vele viszonylag könnyen létrehozni.
@@ -31,7 +27,7 @@ Bal oldalt az Extension ikonra kattintva vagy a `Ctrl` + `Shift` + `X` után a m
 Célszerű a *Mermaid Markdown Syntax Highlighting* és a *Color Highlight* extension-t is használni, ekkor a következőképp jelenik meg a gráf kódja:
 
 <figure markdown="span">
-  ![Image title](/onallo/mermaid03.png){ width="90%" }
+  ![Image title](mermaid03.png){ width="90%" }
   <figcaption>Mermaid, VS code highlight</figcaption>
 </figure>
 

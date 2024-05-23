@@ -117,7 +117,7 @@ git status
 ``` 
 
 <figure markdown="span">
-  ![Image title](/onallo/git_status01.png){ width="100%" }
+  ![Image title](git_status01.png){ width="100%" }
   <figcaption>Git status</figcaption>
 </figure>
 
@@ -125,7 +125,7 @@ git status
 Ugyanez VS code-ban így néz ki:
 
 <figure markdown="span">
-  ![Image title](/onallo/git_status02.png){ width="100%" }
+  ![Image title](git_status02.png){ width="100%" }
   <figcaption>Git status VS code</figcaption>
 </figure>
 
