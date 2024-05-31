@@ -34,8 +34,7 @@ A big thank you goes to the following people/groups:
 
 ``` r
 $ git clone https://github.com/sze-info/ajr/ && cd ajr
-$ pip install mkdocs
-$ pip install mkdocs-material
+$ pip install mkdocs mkdocs-material "mkdocs-material[imaging]"
 $ mkdocs build
 $ mkdocs serve
 ```
