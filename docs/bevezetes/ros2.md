@@ -258,23 +258,28 @@ string frame_id
 
 A `Header` és a`Point` a típusból épül fel a `PoseStamped` típus struktúrája:
 
-``` c
+```  { .bash .annotate }
 $ ros2 interface show geometry_msgs/msg/PoseStamped
 std_msgs/Header header
   uint32 seq
   time stamp
   string frame_id
 geometry_msgs/Pose pose
-  geometry_msgs/Point position
+  geometry_msgs/Point position # (1) 
     float64 x
     float64 y
     float64 z
-  geometry_msgs/Quaternion orientation
+  geometry_msgs/Quaternion orientation # (2)
     float64 x
     float64 y
     float64 z
     float64 w
+
 ```
+{ .annotate }
+
+1.  :man_raising_hand: Ez már ismerős lehet: a `geometry_msgs/msg/Point`-ről már beszéltünk.
+2.  :man_raising_hand: `geometry_msgs/Quaternion` egyfajta 3D orientáció reprezentáció, erről később részletesen.
 
 ## Publishing / Subscribing
 

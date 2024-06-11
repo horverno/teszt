@@ -148,6 +148,7 @@ extra:
       lang: en
 markdown_extensions:
   - attr_list
+  - md_in_html
   - pymdownx.superfences:
       custom_fences:
         - name: mermaid
@@ -215,4 +216,7 @@ extra_javascript:
 
 plugins:
   - social:
-      cards_layout: default
+      cards_layout_options:
+        background_color: "#43AEC5"
+        color: "#ffffff" 
+        font_family: Ubuntu
