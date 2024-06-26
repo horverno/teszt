@@ -18,10 +18,12 @@ Elvárt kvalitások:
 - Template [használata](#ajánlott-módszer-a-kis-beadandó-repo-létrhozására-template) vagy saját megoldás, de a [példák](#példák) szerinti kidolgozottsági szint
 - Lehetőleg hiba nélkül forduljon, de a `build warning` sok esetben megengedhető, a lényeg a tanulás
 - Minél több commit, hogy a munkafolyamatot is lássuk
-- Terjedelem 30-100 kódsor node-onként + CMakeLists.txt, package.xml, README.md, launch fájlok (nem baj, ha hosszabb, de nem elvárt)
+- Terjedelem rövid: 30-100 kódsor node-onként + CMakeLists.txt, package.xml, README.md, launch fájlok (nem baj, ha hosszabb, de nem elvárt)
 - Lehetőleg képpel illusztrálva (lásd [példák](#példák))
 - Lehetőleg [mermaid](https://mermaid.js.org/intro/) diagram a node-ok, topic-ok viszonyáról (lásd [példák](#példák), [leírás](https://sze-info.github.io/arj/onallo/mermaid.html))
-  - **A kis beadandó akkor lesz elfogadható, ha a node buildelhető és a feladatkiírásnak megfelelő kimenetet adja! Amennyiben ez nem teljesül a hallgatónak egy hete lesz a javításra az issue kiírása után!**
+
+!!! danger
+    A kis beadandó akkor lesz elfogadható, ha a node buildelhető és a feladatkiírásnak megfelelő kimenetet adja! Amennyiben ez nem teljesül a hallgatónak egy hete lesz a javításra az [issue](https://docs.github.com/en/issues) kiírásától számítva!
 
 ## Példák
 

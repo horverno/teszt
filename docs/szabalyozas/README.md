@@ -536,13 +536,14 @@ Mint láttuk a vezetői modellek minden esetben egy korábban megtervezett traje
 
 A legrégebbi inverz-modellek a legegyszerűbbek és robosztusabbak, azonban a teljesítményük jellemzően alacsony. A prediktív modellek nagyon pontosak, ugyanakkor nagyon érzékenyek a modell pontosságára. A zárthurkú modellek nagy tartományon stabilak, ugyanakkor általános pontosságuk alacsony. Több egymásba ágyazott hurokból állnak, melyek kalibrációja általában *belülről kifelé* történik. Ezek a legelterjedtem a mai sorozatgyártott rendszerekben.
 
-# Ajánlott irodalom
+## Ajánlott irodalom
 
 1. [Introduction: System Modeling, University of Michigan](https://ctms.engin.umich.edu/CTMS/?example=Introduction&section=ControlPID)
 2. [Interactive Live Script Control Tutorials for MATLAB and Simulink](https://www.mathworks.com/campaigns/products/control-tutorials.html)
 3. [Mario Theers - PID](https://thomasfermi.github.io/Algorithms-for-Automated-Driving/Control/PID.html) - [CC BY 4.0 License](https://github.com/thomasfermi/Algorithms-for-Automated-Driving/blob/master/LICENSE)
 4. [Mario Theers - Pure pursuit](https://thomasfermi.github.io/Algorithms-for-Automated-Driving/Control/PurePursuit.html) - [CC BY 4.0 License](https://github.com/thomasfermi/Algorithms-for-Automated-Driving/blob/master/LICENSE)
 5. [Youtube ControlLectures](https://www.youtube.com/@ControlLectures/videos)
+6. [Bokor József & Gáspár Péter. Irányítástechnika](https://dtk.tankonyvtar.hu/bitstream/handle/123456789/3269/Bokor_Gaspar_Soumelidis_Iranyitastechnika_II.pdf)
 
 ## Vezetői modellek
 

@@ -188,7 +188,7 @@ A megszokott `ctrl`+`v`, `ctrl`+`c` helyett itt a `ctrl`+`shift`+`v`, `ctrl`+`sh
 #### `grep`
 - `grep`: (Global \ Regular Expression \ Print) fájlokban illetve parancsok kimenetében keres
   - pl. `grep 'ROS' ~/.bashrc`: listázza a `bashrc` fájlban az `ROS` szöveget tartalmazó sorokat
-  - pl. `rostopic list | grep pose`: listázza az összes topicot, amiben van `pose` string
+  - pl. `ros2 topic list | grep pose`: listázza az összes topicot, amiben van `pose` string
 #### `ssh`
 - `ssh`: (Secure Shell Protocol) linux gépektbe távoli terminal bejelentkezést tesz lehetővé
   - pl. `ssh nvidia@192.168.1.5`: belépés az adott user adott IP címen lévő gépébe

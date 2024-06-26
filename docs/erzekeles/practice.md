@@ -143,7 +143,8 @@ Az `ROS` idő kezelésre a Unix-időt, vagy a POSIX-időt használja. Ez a UTC (
 
 Hátránya, hogy nem túl intuitív, nem olvasható az ember számára. Pl. a Foxglove Studio ezért is gyakran átalakítja olvashatóbb formátumra. 
 
-![foxglove](foxglove03.png)
+![foxglove_a](foxglove04.png#only-light)
+![foxglove_a](foxglove03.png#only-dark)
 
 A másodpercek és nanoszekundumok a következőképp képzelhetők el:
 

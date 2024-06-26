@@ -88,8 +88,22 @@ ros2 topic echo /turtle1/pose --csv
 ros2 topic echo /turtle1/pose --csv > turtle_data_01.csv
 ros2 topic echo /turtle1/pose --once
 ros2 topic echo /turtle1/pose --once | grep velocity
-ros2 topic echo /turtle1/pose | grep x
+ros2 topic echo /turtle1/pose --field x
+ros2 topic echo /turtle1/pose --field linear_velocity
+ros2 topic echo /turtle1/cmd_vel --field linear.x
 ```
+
+Példa kimenet:
+``` r
+x: 6.2
+y: 4.0
+theta: 0.0
+linear_velocity: 0.0
+angular_velocity: 0.0
+```
+
+!!! tip
+    A `ros2 topic echo --help` parancsot kiadva további használatra vonatkozó leírást kapunk. A `--help` kapcsoló természetesen a többi `ros2` parancsnál is használható.
 
 ### Workspace és build tudnivalók
 Első lépésként az `ls ~ | grep ros2` parancs segítségével ellenőrizzük, hogy létezik-e a workspace a home directoryban(`~`). A tantárgyban a workspace-t `ros2_ws`-nek nevezzük. A név igazából nem számít, de a legtöbb tutorial is ezt a nevet használja, így mi is követjük ezt a hagyományt. Több workspace is használható egyidejüleg, külön source-olható, nagyobb rendszereknél ez kényelmes megoldás lehet. Mi egyelőre maradunk az egytelen `ros2_ws`-nél. Ha nem létezne a `mkdir -p ros2_ws/src` parancs segítségével készíthetjük el a workspace és a source mappákat.

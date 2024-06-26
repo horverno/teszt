@@ -18,6 +18,7 @@ There are many courses who inspired this lecture, some parts were referenced or 
 - Thank you **Autoware** Foundation for the software and the documentation. [Apache License 2.0](https://github.com/autowarefoundation/autoware-documentation/blob/main/LICENSE).
 - Thank you **Óbuda University** Antal Bejczy Center for Intelligent Robotics - Tamás D. Nagy and Péter Galambos [CC BY-NC-SA 4.0](https://github.com/ABC-iRobotics/ros_course_materials_hu/blob/main/LICENSE.md)
 - Thank you [Antonio Mauro Galiano](https://github.com/dottantgal/ros2_pid_library/) - [MIT license](https://github.com/dottantgal/ros2_pid_library/blob/main/LICENSE)
+- Thank you Bokor József, [Bokor József & Gáspár Péter. Irányítástechnika](https://dtk.tankonyvtar.hu/bitstream/handle/123456789/3269/Bokor_Gaspar_Soumelidis_Iranyitastechnika_II.pdf)
 - Thank you Korondi Péter: "Rendszertechnika: Integrált gépészeti és villamos rendszerek leírása irányításelméleti megközelítésben", egyetemi jegyzet, Budapesti Műszaki és Gazdaságtudományi Egyetem, Mechatronika, Optika és Gépészeti Informatika tanszék
 
 # [sze-info.github.io/ajr](https://sze-info.github.io/ajr)

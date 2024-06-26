@@ -15,7 +15,7 @@ Bal oldalt az Extension ikonra kattintva vagy a `Ctrl` + `Shift` + `X` után a m
 
 
 <figure markdown="span">
-  ![Image title](/assets/images/mermaid01.png){ width="80%" }
+  ![Image title](mermaid01.png){ width="80%" }
   <figcaption>Mermaid, VS code extension</figcaption>
 </figure>
 

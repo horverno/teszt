@@ -18,6 +18,11 @@
   --md-primary-bg-color:        #182744;
 }
 
+[data-md-color-scheme="youtube"] img[src$="#only-dark"],
+[data-md-color-scheme="youtube"] img[src$="#gh-dark-mode-only"] {
+  display: none; /* Hide dark images in light mode */
+}
+
 :root>* {
 
 

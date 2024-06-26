@@ -11,7 +11,7 @@ hide:
 
 # Kis beadandó és nagy féléves
 
-A kis beadandó célja, hogy a hallgatók az órán megszerzett kezdő szintű elméleti tudás mellé gyakorlati tapasztalatot szerezzenek ROS 2-ről és GitHub-ról. A kis beadandó viszonylag **kevés idő** alatt elvégezhető: egy oktató pár óra alatt, egy átlag hallgató pár délután alatt elkészülhet vele. Terjedelem 30-100 kódsor node-onként.
+A kis beadandó célja, hogy a hallgatók az órán megszerzett kezdő szintű elméleti tudás mellé gyakorlati tapasztalatot szerezzenek ROS 2-ről és GitHub-ról. A kis beadandó viszonylag **kevés idő** alatt elvégezhető: egy oktató pár óra alatt, egy átlag hallgató pár délután alatt elkészülhet vele. Terjedelme lehet rövid, tehát 30-100 kódsor node-onként.
 
 Ezzel szemben a nagy féléves egy kicsit több időt vesz igénybe, de sokkal érdekesebb feladatra is van lehetőség és idő. Ráadásul a jó és jeles érdemjegyet is csak így lehet megszerezni.
 
@@ -50,12 +50,12 @@ Fontos, tudni, hogy a kis beadandó **aláírás feltétel**. A GitHub regisztr�
 ```mermaid
 flowchart LR
 
-H2([2. hét]) --- H2A([Github<br>regisztráció])--- H2B([Copilot regisztráció<br>indítása])
-H3([3. hét]) --- H3A([Beadandó Github<br>link elküldése]) --- H3B([Copilot<br>regisztráció kész])
-H5([5. hét]) --- H5A([Kis beadandó<br>véglegestése])
-H7([7. hét]) --- H7A([1. ZH]) --- H7B([Nagy féléves Github<br>link elküldése])
-H10([10. hét]) --- H10A([2. ZH])
-H13([13. hét]) --- H13A([PótZH])
+H2([2. alkalom]) --- H2A([Github<br>regisztráció])--- H2B([Copilot regisztráció<br>indítása])
+H3([3. alkalom]) --- H3A([Beadandó Github<br>link elküldése]) --- H3B([Copilot<br>regisztráció kész])
+H5([5. alkalom]) --- H5A([Kis beadandó<br>véglegestése])
+H7([7. alkalom]) --- H7A([1. ZH]) --- H7B([Nagy féléves Github<br>link elküldése])
+H10([10. alkalom]) --- H10A([2. ZH])
+H13([13. alkalom]) --- H13A([PótZH])
 V2([Vizsgaidőszak 2. hét]) --- V2A([Nagy féléves<br>véglegesítés])
 
 

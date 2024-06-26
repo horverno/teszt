@@ -29,6 +29,7 @@ Az alábbi példák nem feltétlenül féléves munkának készültek, de annak 
 - [github.com/szenergy/rviz_markers](https://github.com/szenergy/rviz_markers)
 - [github.com/linklab-uva/f1tenth_gtc_tutorial](https://github.com/linklab-uva/f1tenth_gtc_tutorial)
 - [github.com/Farraj007/Jkk-task](https://github.com/Farraj007/Jkk-task)
+- [github.com/leander-dsouza/breakout_gazebo](https://github.com/leander-dsouza/breakout_gazebo)
 
 *Megjegyzés*: a tárgyban az ROS 2 Humble verziót használjuk, de a féléves beadandót (indoklással) más verzióban is elfogadjuk.
 
