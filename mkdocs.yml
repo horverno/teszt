@@ -94,6 +94,7 @@ theme:
         icon: material/weather-sunny
         name: Switch to light mode
   features:
+  - search.suggest
   - content.code.copy
   - content.code.select
   - content.tabs.link
@@ -215,6 +216,7 @@ extra_javascript:
       permalink: true
 
 plugins:
+  - search
   - social:
       cards_layout_options:
         background_color: "#43AEC5"
