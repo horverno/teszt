@@ -80,7 +80,7 @@ nav:
 theme:
   # logo: ../img/jkk03.svg
   name: 'material'
-  favicon: 'https://raw.githubusercontent.com/sze-info/arj/main/docs/_images/favicon.svg'
+  favicon: 'assets/images/favicon.svg'
   palette:
     - scheme: youtube
       primary: 'custom'
