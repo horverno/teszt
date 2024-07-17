@@ -66,6 +66,34 @@ Nézzünk egy példát, ami a Zoox önvezető robotaxit mutaja be működés kö
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/2sGf_3cAwjA?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
+# Kódsorok
+
+Az alábbi ábrából látszik, hogy egy mai átlagos (vezetéstámogatással rendelkező) személyautó igen komplex szoftvermérnöki munka eredménye, azonban az is világos, hogy a jövőben az önvezető járművek még ennél is összetettebb megoldásokat fognak igényelni.
+
+```mermaid
+---
+config:
+    themeVariables:
+        xyChart:
+            backgroundColor: transparent
+            titleColor: "#AAAAAA"
+            xAxisLabelColor: "#43AEC5"
+            yAxisLabelColor: "#43AEC5"
+            xAxisLineColor: "#AAAAAA"
+            yAxisLineColor: "#AAAAAA"
+            plotColorPalette: "#43AEC5"
+---
+xychart-beta
+
+    title "Millions of Lines of code (LOC) in 2024"
+    x-axis ["Avg. iPhone app","World of warcraft", "Linux kernel", Facebook, "Avg. new vehicle"]
+    y-axis "Average number of lines of codes (million)" 0 --> 210
+    bar [0.04, 5.5, 30, 62, 200]
+
+```
+Forrás: [statista](https://www.statista.com/statistics/1370978/automotive-software-average-lines-of-codes-per-vehicle-globally/#:~:text=Between%202015%20and%202020%2C%20the,production%20in%20the%20following%20years.), [informationisbeautiful](https://informationisbeautiful.net/visualizations/million-lines-of-code/)
+
+
 # Egyetemi járművek
 
 A Széchenyi István Egyetem szerencsére relatív sok átalakított személygépjárművel, illetve robottal rendelkezik. Ezek a következőek:

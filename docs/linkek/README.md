@@ -19,6 +19,7 @@ hide:
 - Terminal kezelése - [[hun](https://github.com/horverno/sze-academic-rpi/blob/master/linuxtut.md)]
 - 60 Linux Commands you need to know [[video, eng](https://www.youtube.com/watch?v=gd7BXuUQ91w)]
 - The 50 Most Popular Linux & Terminal Commands, freeCodeCamp [[video, eng](https://youtu.be/ZtqBQ68cfJc)]
+- Raspberry Pi-hez készült segédanyag: [[hun](https://github.com/horverno/sze-academic-rpi)]
 - Git kezelése:
   - Beadandó leírás, Git és GitHub - [[hun](https://github.com/horverno/sze-academic-rpi/blob/master/gittut.md)] 
   - GitHub first-contributions magyar fordítás - [[hun](https://github.com/firstcontributions/first-contributions/blob/master/translations/README.hu.md)]
@@ -28,9 +29,8 @@ hide:
 - Python freeCodeCamp video [[eng]](https://youtu.be/rfscVS0vtbw)
 - Python 60 days with python videos [[eng]](https://www.youtube.com/playlist?list=PL_mMpzhZWPmJpocdaZdGDHWK2-dOGGJbI)
 - C++ [[hun](https://github.com/hegyhati/ClassRoomExamples)]
-
-Ezek nagy részét a legegyszerűbb elsajátítani a Raspberry Pi-hez készült segédanyaggal: 
-[github.com/horverno/sze-academic-rpi](https://github.com/horverno/sze-academic-rpi).
+- C++ Optimizations Diary [[eng](https://cpp-optimizations.netlify.app/)]
+- C++ Code for yourself videos [[eng](https://www.youtube.com/@CodeForYourself)]
 
 ## Robotikai ismeretek
 

@@ -26,6 +26,9 @@ A tantárgy teljesítése például következő autóipari / autonóm járműves
 - [Continental Autonomous Mobility Hungary Kft.](https://www.continental.com/hu-hu/vallalat/continental-vallalatok-magyarorszagon/am-hungary/) **(Budapest, Győr, Debrecen)**
 - [Járműipari Kutatóközpont, SZE](https://jkk-web.sze.hu/szakmai-kompetenciak/autonom-kozlekedesi-rendszerek-kozpont/) **(Győr)**
 
+További karrierrel kapcsolatos érdekességek például a [statista](https://www.statista.com/outlook/tmo/robotics/worldwide)-n, a [glassdoor](https://www.glassdoor.com/Sueldos/robotics-developer-sueldo-SRCH_KO0,18.htm)-on, [linkedin](https://www.linkedin.com/posts/the-construct_robotics-developer-ros-activity-7208725277965787136-A_UQ/)-en olvashatók.
+
+</details>
 
 !!! note 
     A tárgyban bemutatott ismeretekre alapozva diplomamunka, szakdolgozat, projektmunka, TDK dolgozat is készíthető, illetve van lehetőség a kötelező szakmai gyakorlat teljesítésére is.

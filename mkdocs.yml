@@ -218,7 +218,9 @@ extra_javascript:
 plugins:
   - search
   - social:
+      cards_layout: default/only/image
       cards_layout_options:
+        background_image: 'assets/images/social1.png'
         background_color: "#43AEC5"
         color: "#ffffff" 
         font_family: Ubuntu
