@@ -145,7 +145,7 @@ extra:
       link: https://sze-info.github.io/ajr/ 
       lang: hu
     - name: English
-      link: https://sze-info.github.io/ajv/ 
+      link: https://sze-info.github.io/avr/ 
       lang: en
 markdown_extensions:
   - attr_list
